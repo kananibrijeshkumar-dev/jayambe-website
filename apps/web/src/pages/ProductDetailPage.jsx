@@ -2,7 +2,7 @@ import WhatsAppIcon from '@/components/WhatsAppIcon';
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Link, useParams } from 'react-router-dom';
-import { Check, Phone, MessageCircle, FileText, ArrowLeft, ArrowRight } from 'lucide-react';
+import { Check, Phone, MessageCircle, FileText, ArrowLeft, ArrowRight, ShoppingCart } from 'lucide-react';
 import Layout from '@/components/Layout';
 import Reveal from '@/components/Reveal';
 import Seo from '@/components/Seo';
@@ -44,6 +44,31 @@ const ProductDetailPage = () => {
           name="description"
           content={`${product.name} (${product.model}) manufactured by Jay Ambe Food Machinery, Ahmedabad. ${product.short}`}
         />
+        {/* Product Schema for Google Shopping */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org/",
+            "@type": "Product",
+            "name": product.name,
+            "image": [
+              `https://jayambefoodmachinery.com${product.image}`
+            ],
+            "description": product.description,
+            "sku": product.model,
+            "brand": {
+              "@type": "Brand",
+              "name": "Jay Shree Ambe Food Machinery"
+            },
+            "offers": {
+              "@type": "Offer",
+              "url": `https://jayambefoodmachinery.com/products/${product.slug}`,
+              "priceCurrency": "INR",
+              "price": product.price ? product.price.replace(/[^\d]/g, '') : undefined,
+              "availability": "https://schema.org/InStock",
+              "itemCondition": "https://schema.org/NewCondition"
+            }
+          })}
+        </script>
       </Helmet>
       <Seo title={`${product.name} — Jay Ambe Food Machinery`} description={product.short} image={product.image} siteName={company.name} />
 
@@ -123,6 +148,14 @@ const ProductDetailPage = () => {
               >
                 <FileText className="h-4 w-4" strokeWidth={2.5} /> Get Quote
               </Link>
+              <a
+                href={waLink(`Hi, I want to buy the ${product.name} ${product.price ? `(${product.price})` : ''}. Please share payment details.`)}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex min-h-[48px] items-center gap-2 rounded-sm bg-green-600 px-6 py-3 text-sm font-semibold uppercase tracking-wide text-white transition-colors hover:bg-green-700 active:scale-[0.98]"
+              >
+                <ShoppingCart className="h-4 w-4" strokeWidth={2.5} /> Buy Now
+              </a>
             </div>
 
             <p className="mt-5 text-sm leading-relaxed text-slate-600">

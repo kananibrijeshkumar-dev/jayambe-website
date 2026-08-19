@@ -1,7 +1,7 @@
 import WhatsAppIcon from '@/components/WhatsAppIcon';
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, MessageCircle, FileText } from 'lucide-react';
+import { ArrowRight, MessageCircle, FileText, ShoppingCart } from 'lucide-react';
 import { waLink } from '@/data/site';
 
 const ProductCard = ({ product }) => {
@@ -63,9 +63,9 @@ const ProductCard = ({ product }) => {
           </Link>
           <Link
             to={`/enquiry?product=${encodeURIComponent(product.name)}`}
-            className="flex w-full items-center justify-center gap-1.5 rounded-sm bg-brand-red px-3 py-2.5 text-[11px] font-semibold uppercase tracking-wide text-white transition-colors hover:brightness-95 active:scale-[0.98]"
+            className="flex w-full items-center justify-center gap-1.5 rounded-sm bg-green-600 px-3 py-2.5 text-[11px] font-semibold uppercase tracking-wide text-white transition-colors hover:bg-green-700 active:scale-[0.98]"
           >
-            <FileText className="h-3.5 w-3.5" strokeWidth={2.5} /> Send Enquiry
+            <ShoppingCart className="h-3.5 w-3.5" strokeWidth={2.5} /> Buy Now
           </Link>
         </div>
       </div>
