@@ -11,7 +11,7 @@ const nav = [
   { to: '/', label: 'Home' },
   { to: '/about', label: 'About' },
   { to: '/products', label: 'Products', isDropdown: true },
-  { to: '/why-choose-us', label: 'Why Us' },
+  { to: '/why-choose-us', label: 'Why Choose Us' },
   { to: '/applications', label: 'Applications' },
   { to: '/gallery', label: 'Gallery' },
   { to: '/contact', label: 'Contact' },
