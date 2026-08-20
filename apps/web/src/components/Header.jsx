@@ -42,7 +42,7 @@ const Header = () => {
             Dhamatvan, Ahmedabad, Gujarat 382435
           </span>
           <div className="flex items-center gap-6">
-            <div id="google_translate_element" className="opacity-0 absolute -z-10 w-0 h-0 overflow-hidden pointer-events-none"></div>
+            <div id="google_translate_element" className="hidden"></div>
             <a href={`mailto:${company.email}`} className="inline-flex items-center gap-2 hover:text-white">
               <Mail className="h-3.5 w-3.5 text-brand-red" strokeWidth={2} />
               {company.email}
@@ -113,7 +113,6 @@ const Header = () => {
                   <button onClick={() => changeLanguage('en')} className="block w-full text-left rounded-sm px-4 py-2 text-xs font-semibold uppercase tracking-wide text-slate-600 hover:bg-brand-cream hover:text-brand-blue">English</button>
                   <button onClick={() => changeLanguage('gu')} className="block w-full text-left rounded-sm px-4 py-2 text-xs font-semibold uppercase tracking-wide text-slate-600 hover:bg-brand-cream hover:text-brand-blue">ગુજરાતી</button>
                   <button onClick={() => changeLanguage('hi')} className="block w-full text-left rounded-sm px-4 py-2 text-xs font-semibold uppercase tracking-wide text-slate-600 hover:bg-brand-cream hover:text-brand-blue">हिन्दी</button>
-                  <button onClick={() => changeLanguage('mr')} className="block w-full text-left rounded-sm px-4 py-2 text-xs font-semibold uppercase tracking-wide text-slate-600 hover:bg-brand-cream hover:text-brand-blue">मराठी</button>
                 </div>
               </div>
             </div>
@@ -224,7 +223,6 @@ const Header = () => {
                   <button onClick={() => { changeLanguage('en'); setOpen(false); }} className="text-left text-xs font-semibold uppercase tracking-wide text-slate-500 hover:text-brand-red">English</button>
                   <button onClick={() => { changeLanguage('gu'); setOpen(false); }} className="text-left text-xs font-semibold uppercase tracking-wide text-slate-500 hover:text-brand-red">ગુજરાતી</button>
                   <button onClick={() => { changeLanguage('hi'); setOpen(false); }} className="text-left text-xs font-semibold uppercase tracking-wide text-slate-500 hover:text-brand-red">हिन्दी</button>
-                  <button onClick={() => { changeLanguage('mr'); setOpen(false); }} className="text-left text-xs font-semibold uppercase tracking-wide text-slate-500 hover:text-brand-red">मराठी</button>
                 </div>
               </div>
             </nav>
