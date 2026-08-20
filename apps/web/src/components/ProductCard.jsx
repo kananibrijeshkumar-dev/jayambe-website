@@ -65,7 +65,7 @@ const ProductCard = ({ product }) => {
             onClick={() => addToCart(product)}
             className="flex w-full items-center justify-center gap-1.5 rounded-sm bg-green-600 px-3 py-2.5 text-[11px] font-semibold uppercase tracking-wide text-white transition-colors hover:bg-green-700 shadow-sm active:scale-[0.98]"
           >
-            <ShoppingCart className="h-3.5 w-3.5" strokeWidth={2.5} /> Add to Cart
+            <ShoppingCart className="h-3.5 w-3.5" strokeWidth={2.5} /> Buy Now
           </button>
         </div>
       </div>
