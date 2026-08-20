@@ -4792,3 +4792,171 @@
 ## 2026-08-19 09:29:48.411Z console.error
 - text: Fetch error from : 
 
+## 2026-08-19 12:19:59.585Z load
+- url: http://localhost:3002/products/atta-chakki-7-5hp-double-stage-pulverizer
+
+## 2026-08-19 12:20:00.242Z network.error
+- method: POST
+- url: https://www.google.com/ccm/collect?rcb=18&frm=0&apvc=1&auid=1812781551.1787045497&tid=AW-11334117890&en=page_view&dl=http%3A%2F%2Flocalhost%3A3002%2Fproducts%2Fatta-chakki-7-5hp-double-stage-pulverizer&dr=http%3A%2F%2Flocalhost%3A3002%2Fproducts%2Fatta-chakki-7-5hp-double-stage-pulverizer&scrsrc=www.googletagmanager.com&rnd=552032612.1787142000&navt=r&npa=0&gtm=45be68h1v9213744267za200zd9213744267xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938468~117227715~118897920~118897930~119367802~119367810~120385422&tft=1787142000101&tfd=546&tids=AW-11334117890&fmt=8
+- status: 0
+- durationMs: 141
+
+## 2026-08-19 12:20:00.242Z console.error
+- text: Fetch error from : 
+
+## 2026-08-19 12:20:00.247Z network.error
+- method: POST
+- url: https://www.google.com/rmkt/collect/11334117890/?random=1787142000086&cv=11&fst=1787142000086&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be68h1v9213744267za200zd9213744267xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938468~117227715~118897920~118897930~119367802~119367810~120385422&u_w=1728&u_h=1117&url=http%3A%2F%2Flocalhost%3A3002%2Fproducts%2Fatta-chakki-7-5hp-double-stage-pulverizer&ref=http%3A%2F%2Flocalhost%3A3002%2Fproducts%2Fatta-chakki-7-5hp-double-stage-pulverizer&rcb=18&frm=0&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1812781551.1787045497&uaa=arm&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CGoogle%2520Chrome%3B151.0.7922.77%7CChromium%3B151.0.7922.77&uamb=0&uam=&uap=macOS&uapv=26.5.2&uaw=0&data=event%3Dgtag.config&ept=68&gcp=5
+- status: 0
+- durationMs: 147
+
+## 2026-08-19 12:20:00.247Z console.error
+- text: Fetch error from : 
+
+## 2026-08-19 12:20:00.260Z network.error
+- method: POST
+- url: https://ad.doubleclick.net/ccm/s/collect?auid=1812781551.1787045497&gtm=45be68h1v9213744267za200zd9213744267xec&fmt=8
+- status: 0
+- durationMs: 159
+
+## 2026-08-19 12:20:00.260Z console.error
+- text: Fetch error from : 
+
+## 2026-08-19 21:17:42.032Z load
+- url: http://localhost:3002/products/atta-chakki-7-5hp-double-stage-pulverizer
+
+## 2026-08-19 21:17:42.472Z network.error
+- method: POST
+- url: https://www.google.com/ccm/collect?rcb=1&frm=0&apvc=1&auid=1812781551.1787045497&tid=AW-11334117890&en=page_view&dl=http%3A%2F%2Flocalhost%3A3002%2Fproducts%2Fatta-chakki-7-5hp-double-stage-pulverizer&dr=http%3A%2F%2Flocalhost%3A3002%2Fproducts%2Fatta-chakki-7-5hp-double-stage-pulverizer&scrsrc=www.googletagmanager.com&rnd=1881214761.1787174262&navt=r&npa=0&gtm=45be68i0v9213744267za200zd9213744267xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938469~117227715~118897920~118897930~119367802~119367810~120385422&tft=1787174262329&tfd=654&tids=AW-11334117890&fmt=8
+- status: 0
+- durationMs: 143
+
+## 2026-08-19 21:17:42.472Z console.error
+- text: Fetch error from : 
+
+## 2026-08-19 21:17:42.502Z network.error
+- method: POST
+- url: https://ad.doubleclick.net/ccm/s/collect?auid=1812781551.1787045497&gtm=45be68i0v9213744267za200zd9213744267xec&fmt=8
+- status: 0
+- durationMs: 174
+
+## 2026-08-19 21:17:42.503Z console.error
+- text: Fetch error from : 
+
+## 2026-08-19 21:17:42.772Z network.error
+- method: POST
+- url: https://www.google.com/rmkt/collect/11334117890/?random=1787174262316&cv=11&fst=1787174262316&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be68i0v9213744267za200zd9213744267xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938469~117227715~118897920~118897930~119367802~119367810~120385422&u_w=1728&u_h=1117&url=http%3A%2F%2Flocalhost%3A3002%2Fproducts%2Fatta-chakki-7-5hp-double-stage-pulverizer&ref=http%3A%2F%2Flocalhost%3A3002%2Fproducts%2Fatta-chakki-7-5hp-double-stage-pulverizer&rcb=1&frm=0&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1812781551.1787045497&uaa=arm&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CGoogle%2520Chrome%3B151.0.7922.77%7CChromium%3B151.0.7922.77&uamb=0&uam=&uap=macOS&uapv=26.5.2&uaw=0&data=event%3Dgtag.config&ept=68&gcp=5
+- status: 0
+- durationMs: 444
+
+## 2026-08-19 21:17:42.772Z console.error
+- text: Fetch error from : 
+
+## 2026-08-20 02:13:27.076Z load
+- url: http://localhost:3002/products/atta-chakki-7-5hp-double-stage-pulverizer
+
+## 2026-08-20 02:13:27.486Z network.error
+- method: POST
+- url: https://www.google.com/ccm/collect?rcb=4&frm=0&apvc=1&auid=1812781551.1787045497&tid=AW-11334117890&en=page_view&dl=http%3A%2F%2Flocalhost%3A3002%2Fproducts%2Fatta-chakki-7-5hp-double-stage-pulverizer&dr=http%3A%2F%2Flocalhost%3A3002%2Fproducts%2Fatta-chakki-7-5hp-double-stage-pulverizer&scrsrc=www.googletagmanager.com&rnd=712276887.1787192007&navt=r&npa=0&gtm=45be68i1v9213744267za200zd9213744267xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938469~117227715~118897920~118897930~119367802~119367810~120385422&tft=1787192007355&tfd=418&tids=AW-11334117890&fmt=8
+- status: 0
+- durationMs: 131
+
+## 2026-08-20 02:13:27.486Z console.error
+- text: Fetch error from : 
+
+## 2026-08-20 02:13:27.497Z network.error
+- method: POST
+- url: https://www.google.com/rmkt/collect/11334117890/?random=1787192007341&cv=11&fst=1787192007341&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be68i1v9213744267za200zd9213744267xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938469~117227715~118897920~118897930~119367802~119367810~120385422&u_w=1728&u_h=1117&url=http%3A%2F%2Flocalhost%3A3002%2Fproducts%2Fatta-chakki-7-5hp-double-stage-pulverizer&ref=http%3A%2F%2Flocalhost%3A3002%2Fproducts%2Fatta-chakki-7-5hp-double-stage-pulverizer&rcb=4&frm=0&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1812781551.1787045497&uaa=arm&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CGoogle%2520Chrome%3B151.0.7922.77%7CChromium%3B151.0.7922.77&uamb=0&uam=&uap=macOS&uapv=26.5.2&uaw=0&data=event%3Dgtag.config&ept=68&gcp=5
+- status: 0
+- durationMs: 142
+
+## 2026-08-20 02:13:27.497Z console.error
+- text: Fetch error from : 
+
+## 2026-08-20 02:13:27.609Z network.error
+- method: POST
+- url: https://ad.doubleclick.net/ccm/s/collect?auid=1812781551.1787045497&gtm=45be68i1v9213744267za200zd9213744267xec&fmt=8
+- status: 0
+- durationMs: 254
+
+## 2026-08-20 02:13:27.609Z console.error
+- text: Fetch error from : 
+
+## 2026-08-20 02:16:10.980Z load
+- url: http://localhost:3002/products/atta-chakki-7-5hp-double-stage-pulverizer
+
+## 2026-08-20 02:16:11.509Z network.error
+- method: POST
+- url: https://www.google.com/ccm/collect?rcb=2&frm=0&apvc=1&auid=1812781551.1787045497&dt=Atta%20Chakki%207.5HP%20Double%20Stage%20Pulverizer%20Machine%20Three%20Phase%20%7C%20Model%20No%3A%20JADS-02%20%7C%20Manufacturer%20in%20Ahmedabad%2C%20Gujarat&tid=AW-11334117890&en=page_view&dl=http%3A%2F%2Flocalhost%3A3002%2Fproducts%2Fatta-chakki-7-5hp-double-stage-pulverizer&dr=http%3A%2F%2Flocalhost%3A3002%2Fproducts%2Fatta-chakki-7-5hp-double-stage-pulverizer&scrsrc=www.googletagmanager.com&rnd=461085858.1787192171&navt=r&npa=0&gtm=45be68j0h2v9213744267za200zd9213744267xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616985~115938465~115938469~117227715~118897920~118897930~119367802~119367810~119793973~120315471~120385423&tft=1787192171377&tfd=442&tids=AW-11334117890&fmt=8
+- status: 0
+- durationMs: 132
+
+## 2026-08-20 02:16:11.509Z console.error
+- text: Fetch error from : 
+
+## 2026-08-20 02:16:11.514Z network.error
+- method: POST
+- url: https://www.google.com/rmkt/collect/11334117890/?random=1787192171365&cv=11&fst=1787192171365&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be68j0h2v9213744267za200zd9213744267xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616985~115938465~115938469~117227715~118897920~118897930~119367802~119367810~119793973~120315471~120385423&u_w=1728&u_h=1117&url=http%3A%2F%2Flocalhost%3A3002%2Fproducts%2Fatta-chakki-7-5hp-double-stage-pulverizer&ref=http%3A%2F%2Flocalhost%3A3002%2Fproducts%2Fatta-chakki-7-5hp-double-stage-pulverizer&rcb=2&frm=0&tiba=Atta%20Chakki%207.5HP%20Double%20Stage%20Pulverizer%20Machine%20Three%20Phase%20%7C%20Model%20No%3A%20JADS-02%20%7C%20Manufacturer%20in%20Ahmedabad%2C%20Gujarat&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1812781551.1787045497&uaa=arm&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CGoogle%2520Chrome%3B151.0.7922.77%7CChromium%3B151.0.7922.77&uamb=0&uam=&uap=macOS&uapv=26.5.2&uaw=0&data=event%3Dgtag.config&ept=68&gcp=5
+- status: 0
+- durationMs: 137
+
+## 2026-08-20 02:16:11.514Z console.error
+- text: Fetch error from : 
+
+## 2026-08-20 02:16:11.523Z network.error
+- method: POST
+- url: https://ad.doubleclick.net/ccm/s/collect?auid=1812781551.1787045497&gtm=45be68j0h2v9213744267za200zd9213744267xec&fmt=8
+- status: 0
+- durationMs: 145
+
+## 2026-08-20 02:16:11.523Z console.error
+- text: Fetch error from : 
+
+## 2026-08-20 02:16:15.859Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":" Buy Now"}
+
+## 2026-08-20 02:20:01.701Z click
+- element: {"tag":"button","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Products "}
+
+## 2026-08-20 02:20:03.700Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"View All Products"}
+
+## 2026-08-20 02:20:03.702Z navigate
+- url: http://localhost:3002/products
+- via: pushState
+
+## 2026-08-20 02:20:07.985Z click
+- element: {"tag":"a","role":null,"ariaLabel":"View details for Atta Chakki 5HP Double Stage Pulverizer Machine","name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Three Phase | Model No: JADS-01"}
+
+## 2026-08-20 02:20:07.986Z navigate
+- url: http://localhost:3002/products/atta-chakki-5-hp-double-stage-pulverizer-three-phase
+- via: pushState
+
+## 2026-08-20 02:20:08.190Z click
+- element: {"tag":"img","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":""}
+
+## 2026-08-20 02:20:15.325Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Atta Chakki 10HP Double Stage Pulverizer Machine"}
+
+## 2026-08-20 02:20:15.326Z navigate
+- url: http://localhost:3002/products/atta-chakki-10hp-double-stage-pulverizer
+- via: pushState
+
+## 2026-08-20 02:20:18.542Z navigate
+- url: http://localhost:3002/products/atta-chakki-5-hp-double-stage-pulverizer-three-phase
+- via: popstate
+
+## 2026-08-20 02:20:27.290Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Home"}
+
+## 2026-08-20 02:20:27.290Z navigate
+- url: http://localhost:3002/
+- via: pushState
+
+## 2026-08-20 02:20:39.509Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Atta & Flour MillsCommercial scale atta chakki machines for wheat, grains and besan.Explore Line "}
+
+## 2026-08-20 02:20:39.509Z navigate
+- url: http://localhost:3002/products#atta-chakki
+- via: pushState
+

@@ -32,6 +32,47 @@ const HomePage = () => (
         name="keywords"
         content="Atta Pulverizer Machine Manufacturer Ahmedabad, Flour Mill Machine Manufacturer Ahmedabad, Masala Pulverizer Machine Manufacturer, Pulverizer Machine Manufacturer Gujarat, Food Machinery Manufacturer Ahmedabad, Atta Chakki Manufacturer Ahmedabad, Food Processing Machinery Manufacturer Gujarat"
       />
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": ["LocalBusiness", "Manufacturer"],
+          "name": company.name,
+          "image": "https://images.hostinger.com/b192b61e-d9b4-492e-ae13-4852e65d1608.png",
+          "@id": "https://jayambefoodmachinery.com",
+          "url": "https://jayambefoodmachinery.com",
+          "telephone": company.phone,
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": company.address,
+            "addressLocality": "Ahmedabad",
+            "addressRegion": "Gujarat",
+            "postalCode": "382435",
+            "addressCountry": "IN"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 22.9568,
+            "longitude": 72.6713
+          },
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday"
+            ],
+            "opens": "09:00",
+            "closes": "18:00"
+          },
+          "sameAs": [
+            "https://www.facebook.com/JayAmbeFoodMachinery",
+            "https://www.instagram.com/jayambefoodmachinery"
+          ]
+        })}
+      </script>
     </Helmet>
     <Seo
       title="Atta, Flour & Masala Pulverizer Machine Manufacturer in Ahmedabad"
