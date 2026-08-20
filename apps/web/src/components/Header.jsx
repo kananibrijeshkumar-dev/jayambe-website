@@ -1,9 +1,11 @@
 import WhatsAppIcon from '@/components/WhatsAppIcon';
 import React, { useEffect, useState } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
-import { Menu, Phone, X, MessageCircle, Mail, MapPin, ChevronDown, Globe } from 'lucide-react';
+import { Menu, Phone, X, MessageCircle, Mail, MapPin, ChevronDown, Globe, ShoppingBag } from 'lucide-react';
 import Logo from '@/components/Logo';
 import { company, waLink, categories } from '@/data/site';
+import { useCart } from '../context/CartContext';
+import CartDrawer from './CartDrawer';
 
 const nav = [
   { to: '/', label: 'Home' },
@@ -32,6 +34,8 @@ const Header = () => {
       select.dispatchEvent(new Event('change', { bubbles: true }));
     }
   };
+
+  const { cartCount, setIsCartOpen } = useCart();
 
   return (
     <header className="sticky top-0 z-50 shadow-sm">
@@ -116,6 +120,18 @@ const Header = () => {
                 </div>
               </div>
             </div>
+
+            <button 
+              onClick={() => setIsCartOpen(true)}
+              className="relative ml-4 flex h-10 w-10 items-center justify-center rounded-sm bg-brand-cream text-brand-blue transition-colors hover:bg-brand-blue hover:text-white"
+            >
+              <ShoppingBag className="h-5 w-5" />
+              {cartCount > 0 && (
+                <span className="absolute -right-1.5 -top-1.5 flex h-5 w-5 items-center justify-center rounded-full bg-brand-red text-[10px] font-bold text-white shadow-sm">
+                  {cartCount}
+                </span>
+              )}
+            </button>
           </nav>
 
           <div className="hidden items-center gap-2 xl:flex">
@@ -237,6 +253,7 @@ const Header = () => {
         )}
       </div>
       <div className="industrial-stripe h-1.5 bg-brand-cream" />
+      <CartDrawer />
     </header>
   );
 };

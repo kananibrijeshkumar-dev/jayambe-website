@@ -8,7 +8,8 @@ import Reveal from '@/components/Reveal';
 import Seo from '@/components/Seo';
 import ProductCard from '@/components/ProductCard';
 import EnquiryForm from '@/components/EnquiryForm';
-import { company, products, waLink } from '@/data/site';
+import { company, products } from '@/data/site';
+import { useCart } from '../context/CartContext';
 
 const AOR = 'Available on request';
 
@@ -31,10 +32,11 @@ const NotFound = () => (
 const ProductDetailPage = () => {
   const { slug } = useParams();
   const product = products.find((p) => p.slug === slug);
+  const { addToCart } = useCart();
+  
   if (!product) return <NotFound />;
 
   const related = products.filter((p) => p.categories[0] === product.categories[0] && p.slug !== product.slug).slice(0, 3);
-  const waMsg = `Hello Jay Ambe Food Machinery, I am interested in ${product.name}. Please share price, specifications and availability.`;
 
   return (
     <Layout>
@@ -142,20 +144,18 @@ const ProductDetailPage = () => {
 
             {/* CTAs */}
             <div className="mt-6 flex flex-wrap gap-3">
+              <button
+                onClick={() => addToCart(product)}
+                className="inline-flex min-h-[48px] items-center gap-2 rounded-sm bg-green-600 px-8 py-3 text-sm font-semibold uppercase tracking-wide text-white transition-colors hover:bg-green-700 shadow-md active:scale-[0.98]"
+              >
+                <ShoppingCart className="h-4 w-4" strokeWidth={2.5} /> Add to Cart
+              </button>
               <Link
                 to={`/enquiry?product=${encodeURIComponent(product.name)}`}
                 className="inline-flex min-h-[48px] items-center gap-2 rounded-sm bg-brand-red px-6 py-3 text-sm font-semibold uppercase tracking-wide text-white transition-colors hover:brightness-95 active:scale-[0.98]"
               >
                 <FileText className="h-4 w-4" strokeWidth={2.5} /> Get Quote
               </Link>
-              <a
-                href={waLink(`Hi, I want to buy the ${product.name} ${product.price ? `(${product.price})` : ''}. Please share payment details.`)}
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex min-h-[48px] items-center gap-2 rounded-sm bg-green-600 px-6 py-3 text-sm font-semibold uppercase tracking-wide text-white transition-colors hover:bg-green-700 active:scale-[0.98]"
-              >
-                <ShoppingCart className="h-4 w-4" strokeWidth={2.5} /> Buy Now
-              </a>
             </div>
 
             <p className="mt-5 text-sm leading-relaxed text-slate-600">
