@@ -4963,3 +4963,10 @@
 ## 2026-08-20 02:38:44.378Z load
 - url: http://localhost:3002/products#atta-chakki
 
+## 2026-08-20 02:42:22.161Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Home"}
+
+## 2026-08-20 02:42:22.162Z navigate
+- url: http://localhost:3002/
+- via: pushState
+
