@@ -111,3 +111,46 @@ body {
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 }
+
+/* --- Google Translate Customization --- */
+
+/* Hide the Google Translate top banner */
+body {
+  top: 0 !important;
+}
+.skiptranslate iframe {
+  display: none !important;
+}
+
+/* Hide the "Powered by Google Translate" branding */
+.goog-logo-link {
+  display: none !important;
+}
+.goog-te-gadget {
+  color: transparent !important;
+  font-size: 0 !important;
+}
+
+/* Style the dropdown to look like a native element */
+.goog-te-combo {
+  background-color: transparent !important;
+  color: #F8F9FA !important; /* brand-beige */
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  border-radius: 4px;
+  padding: 2px 5px !important;
+  font-size: 12px !important;
+  font-family: inherit !important;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+}
+.goog-te-combo option {
+  background-color: #0b1120; /* brand-dark */
+  color: #F8F9FA;
+}
+/* Hide the original Google Translate button */
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+
