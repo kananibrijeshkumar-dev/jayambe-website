@@ -11,7 +11,7 @@ const nav = [
   { to: '/', label: 'Home' },
   { to: '/about', label: 'About' },
   { to: '/products', label: 'Products', isDropdown: true },
-  { to: '/why-choose-us', label: 'Why Choose Us' },
+  { to: '/why-choose-us', label: 'Why Us' },
   { to: '/applications', label: 'Applications' },
   { to: '/gallery', label: 'Gallery' },
   { to: '/contact', label: 'Contact' },
@@ -65,7 +65,7 @@ const Header = () => {
               if (item.isDropdown) {
                 return (
                   <div key={item.to} className="group relative">
-                    <button className="flex items-center gap-1 rounded-sm px-3 py-2 text-sm font-semibold uppercase tracking-wide text-slate-600 transition-colors hover:text-brand-blue">
+                    <button className="flex items-center gap-1 rounded-sm px-2 py-2 text-[13px] font-semibold uppercase tracking-wide text-slate-600 transition-colors hover:text-brand-blue xl:px-3 xl:text-sm">
                       {item.label} <ChevronDown className="h-4 w-4" />
                     </button>
                     
@@ -98,8 +98,8 @@ const Header = () => {
                   key={item.to}
                   to={item.to}
                   className={({ isActive }) =>
-                    `rounded-sm px-3 py-2 text-sm font-semibold uppercase tracking-wide transition-colors ${
-                      isActive ? 'bg-brand-cream text-brand-blue' : 'text-slate-600 hover:text-brand-blue'
+                    `rounded-sm px-2 py-2 text-[13px] font-semibold uppercase tracking-wide transition-colors xl:px-3 xl:text-sm ${
+                      isActive ? 'text-brand-blue' : 'text-slate-600 hover:text-brand-blue'
                     }`
                   }
                 >

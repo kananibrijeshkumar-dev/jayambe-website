@@ -22,7 +22,6 @@ function App() {
         <CartProvider>
             <Router>
                 <ScrollToTop />
-                <WhatsAppIcon />
                 <Routes>
                     <Route path="/" element={<HomePage />} />
                     <Route path="/about" element={<AboutPage />} />
