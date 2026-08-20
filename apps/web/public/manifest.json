@@ -1,0 +1,17 @@
+{
+  "name": "Jay Ambe Food Machinery",
+  "short_name": "Jay Ambe",
+  "description": "Premium Food Machinery Manufacturing",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#16a34a",
+  "icons": [
+    {
+      "src": "/media/company-logo.jpeg",
+      "sizes": "192x192 512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ]
+}
