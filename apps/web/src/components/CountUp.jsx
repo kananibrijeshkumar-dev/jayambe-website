@@ -42,7 +42,7 @@ const CountUp = ({ value, duration = 1600, decimals = 0, prefix = '', suffix = '
     }, [value, duration]);
 
     return (
-        <span ref={ref} className={className}>
+        <span ref={ref} className={`notranslate ${className}`}>
             {prefix}
             {display.toLocaleString(locale, { minimumFractionDigits: decimals, maximumFractionDigits: decimals })}
             {suffix}
