@@ -42,7 +42,7 @@ const Header = () => {
             Dhamatvan, Ahmedabad, Gujarat 382435
           </span>
           <div className="flex items-center gap-6">
-            <div id="google_translate_element" className="opacity-0 absolute pointer-events-none -z-10 w-0 h-0 overflow-hidden"></div>
+            <div id="google_translate_element" className="absolute -top-[9999px] -left-[9999px] w-[200px] h-[50px]"></div>
             <a href={`mailto:${company.email}`} className="inline-flex items-center gap-2 hover:text-white">
               <Mail className="h-3.5 w-3.5 text-brand-red" strokeWidth={2} />
               {company.email}
