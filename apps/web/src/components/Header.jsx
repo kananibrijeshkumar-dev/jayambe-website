@@ -41,7 +41,8 @@ const Header = () => {
             <MapPin className="h-3.5 w-3.5 text-brand-red" strokeWidth={2} />
             Dhamatvan, Ahmedabad, Gujarat 382435
           </span>
-          <div className="flex items-center gap-6">
+            <div className="flex items-center gap-6">
+            <div id="google_translate_element" className="absolute -top-[9999px] -left-[9999px] w-[1px] h-[1px] overflow-hidden opacity-0"></div>
             <a href={`mailto:${company.email}`} className="inline-flex items-center gap-2 hover:text-white">
               <Mail className="h-3.5 w-3.5 text-brand-red" strokeWidth={2} />
               {company.email}
@@ -103,8 +104,17 @@ const Header = () => {
               );
             })}
             
-            <div className="ml-2 flex items-center">
-              <div id="google_translate_element"></div>
+            <div className="group relative ml-2">
+              <button className="flex items-center gap-1 rounded-sm px-3 py-2 text-sm font-semibold uppercase tracking-wide text-brand-blue bg-brand-cream hover:bg-brand-blue hover:text-white transition-colors">
+                <Globe className="h-4 w-4" /> Language <ChevronDown className="h-4 w-4" />
+              </button>
+              <div className="invisible absolute right-0 top-full z-50 mt-0 flex w-36 flex-col opacity-0 shadow-xl transition-all duration-200 group-hover:visible group-hover:mt-2 group-hover:opacity-100">
+                <div className="rounded-md border border-slate-200 bg-white p-2">
+                  <button onClick={() => changeLanguage('en')} className="block w-full text-left rounded-sm px-4 py-2 text-xs font-semibold uppercase tracking-wide text-slate-600 hover:bg-brand-cream hover:text-brand-blue">English</button>
+                  <button onClick={() => changeLanguage('gu')} className="block w-full text-left rounded-sm px-4 py-2 text-xs font-semibold uppercase tracking-wide text-slate-600 hover:bg-brand-cream hover:text-brand-blue">ગુજરાતી</button>
+                  <button onClick={() => changeLanguage('hi')} className="block w-full text-left rounded-sm px-4 py-2 text-xs font-semibold uppercase tracking-wide text-slate-600 hover:bg-brand-cream hover:text-brand-blue">हिन्दी</button>
+                </div>
+              </div>
             </div>
           </nav>
 
@@ -205,11 +215,15 @@ const Header = () => {
                 );
               })}
               
-              <div className="flex flex-col border-b border-brand-cream py-3">
-                <span className="flex items-center text-sm font-semibold uppercase tracking-wide text-brand-blue mb-2">
+              <div className="flex flex-col border-b border-brand-cream py-1">
+                <span className="flex items-center py-2 text-sm font-semibold uppercase tracking-wide text-brand-blue">
                   <Globe className="h-4 w-4 mr-2" /> Select Language
                 </span>
-                <div id="google_translate_element_mobile" className="ml-6"></div>
+                <div className="ml-6 flex flex-col space-y-3 pb-3 pt-2">
+                  <button onClick={() => { changeLanguage('en'); setOpen(false); }} className="text-left text-xs font-semibold uppercase tracking-wide text-slate-500 hover:text-brand-red">English</button>
+                  <button onClick={() => { changeLanguage('gu'); setOpen(false); }} className="text-left text-xs font-semibold uppercase tracking-wide text-slate-500 hover:text-brand-red">ગુજરાતી</button>
+                  <button onClick={() => { changeLanguage('hi'); setOpen(false); }} className="text-left text-xs font-semibold uppercase tracking-wide text-slate-500 hover:text-brand-red">हिन्दी</button>
+                </div>
               </div>
             </nav>
             <Link
