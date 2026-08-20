@@ -2,10 +2,10 @@ import WhatsAppIcon from '@/components/WhatsAppIcon';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, MessageCircle, FileText, ShoppingCart } from 'lucide-react';
-import { waLink } from '@/data/site';
+import { useCart } from '../context/CartContext';
 
 const ProductCard = ({ product }) => {
-  const waMsg = `Hello Jay Ambe Food Machinery, I am interested in ${product.name}. Please share price, specifications and availability.`;
+  const { addToCart } = useCart();
 
   return (
     <article className="group flex h-full flex-col overflow-hidden rounded-md border border-slate-200 bg-white shadow-[0_2px_8px_-2px_rgba(15,23,42,0.12)] transition-all duration-300 hover:-translate-y-1.5 hover:border-brand-blue/40 hover:shadow-[0_18px_36px_-12px_rgba(214,88,27,0.22)]">
@@ -61,12 +61,12 @@ const ProductCard = ({ product }) => {
           >
             View Details <ArrowRight className="h-3.5 w-3.5" strokeWidth={2.5} />
           </Link>
-          <Link
-            to={`/enquiry?product=${encodeURIComponent(product.name)}`}
-            className="flex w-full items-center justify-center gap-1.5 rounded-sm bg-green-600 px-3 py-2.5 text-[11px] font-semibold uppercase tracking-wide text-white transition-colors hover:bg-green-700 active:scale-[0.98]"
+          <button
+            onClick={() => addToCart(product)}
+            className="flex w-full items-center justify-center gap-1.5 rounded-sm bg-green-600 px-3 py-2.5 text-[11px] font-semibold uppercase tracking-wide text-white transition-colors hover:bg-green-700 shadow-sm active:scale-[0.98]"
           >
-            <ShoppingCart className="h-3.5 w-3.5" strokeWidth={2.5} /> Buy Now
-          </Link>
+            <ShoppingCart className="h-3.5 w-3.5" strokeWidth={2.5} /> Add to Cart
+          </button>
         </div>
       </div>
     </article>
