@@ -26,15 +26,20 @@ const Header = () => {
   }, [location.pathname]);
 
   const changeLanguage = (langCode) => {
-    const select = document.querySelector('.goog-te-combo');
-    if (select) {
-      select.value = langCode;
-      select.dispatchEvent(new Event('change', { bubbles: true }));
-    } else {
-      // Fallback if the Google widget hasn't fully loaded yet
+    // Clear any existing translation cookies to prevent conflicts
+    document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+    document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=' + window.location.hostname + ';';
+    document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=.' + window.location.hostname + ';';
+    
+    if (langCode !== 'en') {
+      // Set the new translation cookie for all possible domain variants
       document.cookie = `googtrans=/en/${langCode}; path=/;`;
-      window.location.reload();
+      document.cookie = `googtrans=/en/${langCode}; path=/; domain=${window.location.hostname};`;
+      document.cookie = `googtrans=/en/${langCode}; path=/; domain=.${window.location.hostname};`;
     }
+    
+    // Force a hard reload so Google Translate automatically reads the new cookie
+    window.location.reload();
   };
 
   return (
