@@ -44,6 +44,7 @@ const AdminPage = () => {
     let query = supabase
       .from('inquiries')
       .select('*')
+      .eq('archived', false)
       .order('created_at', { ascending: false });
       
     if (startDate) {
@@ -80,15 +81,15 @@ const AdminPage = () => {
   };
 
   const deleteInquiry = async (id) => {
-    if (!window.confirm('Are you sure you want to delete this lead?')) return;
+    if (!window.confirm('Are you sure you want to archive this lead? (It will be safely hidden)')) return;
     
     const { error } = await supabase
       .from('inquiries')
-      .delete()
+      .update({ archived: true })
       .eq('id', id);
       
     if (error) {
-      alert('Error deleting: ' + error.message);
+      alert('Error archiving: ' + error.message);
     } else {
       setSelectedIds(prev => prev.filter(selectedId => selectedId !== id));
       fetchInquiries();
@@ -97,15 +98,15 @@ const AdminPage = () => {
 
   const deleteSelectedInquiries = async () => {
     if (selectedIds.length === 0) return;
-    if (!window.confirm(`Are you sure you want to delete ${selectedIds.length} selected leads?`)) return;
+    if (!window.confirm(`Are you sure you want to archive ${selectedIds.length} selected leads? (They will be safely hidden)`)) return;
 
     const { error } = await supabase
       .from('inquiries')
-      .delete()
+      .update({ archived: true })
       .in('id', selectedIds);
 
     if (error) {
-      alert('Error deleting: ' + error.message);
+      alert('Error archiving: ' + error.message);
     } else {
       setSelectedIds([]);
       fetchInquiries();
@@ -208,7 +209,7 @@ const AdminPage = () => {
                 onClick={deleteSelectedInquiries}
                 className="inline-flex items-center gap-2 rounded-sm bg-brand-red px-3 py-1.5 text-sm font-medium text-white hover:bg-red-700"
               >
-                <Trash2 className="h-4 w-4" /> Delete ({selectedIds.length})
+                <Trash2 className="h-4 w-4" /> Archive ({selectedIds.length})
               </button>
             )}
             <div className="flex items-center gap-2 rounded-sm border border-slate-200 bg-white px-2 py-1.5">
