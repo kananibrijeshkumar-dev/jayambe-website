@@ -29,7 +29,11 @@ const Header = () => {
     const select = document.querySelector('.goog-te-combo');
     if (select) {
       select.value = langCode;
-      select.dispatchEvent(new Event('change'));
+      select.dispatchEvent(new Event('change', { bubbles: true }));
+    } else {
+      // Fallback if the Google widget hasn't fully loaded yet
+      document.cookie = `googtrans=/en/${langCode}; path=/;`;
+      window.location.reload();
     }
   };
 
