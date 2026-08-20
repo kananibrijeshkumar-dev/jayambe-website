@@ -20,13 +20,23 @@
 		      }
 		    };
 		    gtag('event', 'conversion', {
-		        'send_to': 'AW-11326117950/YZ2ZCIOSBGQZEIL9v9cq',
+		        'send_to': 'AW-11334117890/YZ2ZCIOSBGQZEIL9v9cq',
 		        'value': 1.0,
 		        'currency': 'INR',
 		        'event_callback': callback
 		    });
 		    return false;
 		  }
+		  
+		  // Auto-track all phone link clicks
+		  document.addEventListener('click', function(e) {
+		    var link = e.target.closest('a[href^="tel:"]');
+		    if (link) {
+		      // We do not preventDefault because we still want the phone app to open.
+		      // The gtag_report_conversion callback will also set window.location = url as a fallback.
+		      gtag_report_conversion(link.getAttribute('href'));
+		    }
+		  });
 		</script>
 		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
 		<meta name="generator" content="Hostinger Horizons" />
