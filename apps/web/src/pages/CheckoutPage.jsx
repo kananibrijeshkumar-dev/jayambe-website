@@ -67,6 +67,7 @@ const CheckoutPage = () => {
       currency: "INR",
       name: "Jay Ambe Food Machinery",
       description: "Checkout Payment",
+      image: "https://jayambefoodmachinery.com/media/company-logo.jpeg",
       handler: async function (response) {
         // Payment successful
         try {
