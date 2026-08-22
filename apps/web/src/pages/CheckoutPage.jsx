@@ -57,17 +57,16 @@ const CheckoutPage = () => {
       return;
     }
 
-    // Amount is in paisa (multiply by 100)
-    const amountInPaisa = cartTotal * 100;
+    // Fixed Booking Advance: ₹10,000
+    const amountInPaisa = 10000 * 100;
 
     const options = {
       // Use test key if no live key is provided
-      key: import.meta.env.VITE_RAZORPAY_KEY || "rzp_test_YOUR_TEST_KEY_HERE",
-      amount: amountInPaisa.toString(),
+      key: "rzp_test_TSpqFvligr6jjC",
+      amount: amountInPaisa,
       currency: "INR",
       name: "Jay Ambe Food Machinery",
-      description: "Test Transaction",
-      image: "/media/company-logo.jpeg",
+      description: "Checkout Payment",
       handler: async function (response) {
         // Payment successful
         try {
@@ -92,11 +91,6 @@ const CheckoutPage = () => {
           console.error("Error saving order:", error);
           alert("Payment was successful but we couldn't save your order automatically. Please contact support with Payment ID: " + response.razorpay_payment_id);
         }
-      },
-      prefill: {
-        name: `${form.firstName} ${form.lastName}`,
-        email: form.emailOrPhone.includes('@') ? form.emailOrPhone : '',
-        contact: !form.emailOrPhone.includes('@') ? form.emailOrPhone : '',
       },
       notes: {
         address: `${form.address}, ${form.city}, ${form.state} - ${form.pinCode}`,
@@ -266,7 +260,7 @@ const CheckoutPage = () => {
 
           <div className="mt-6 border-t border-slate-200 pt-6 space-y-3 text-sm text-slate-600">
             <div className="flex justify-between">
-              <span>Subtotal</span>
+              <span>Total Machine Cost</span>
               <span className="font-semibold text-slate-800">₹{cartTotal.toLocaleString('en-IN')}</span>
             </div>
             <div className="flex justify-between">
@@ -276,12 +270,15 @@ const CheckoutPage = () => {
           </div>
 
           <div className="mt-6 flex items-center justify-between border-t border-slate-200 pt-6">
-            <span className="text-lg font-bold text-slate-800">Total</span>
-            <span className="text-2xl font-bold text-slate-800">
-              <span className="text-sm text-slate-500 font-normal mr-2">INR</span>
-              ₹{cartTotal.toLocaleString('en-IN')}
+            <span className="text-lg font-bold text-slate-800">Booking Advance</span>
+            <span className="text-2xl font-bold text-brand-red">
+              <span className="text-sm text-brand-red/70 font-normal mr-2">INR</span>
+              ₹10,000
             </span>
           </div>
+          <p className="mt-2 text-right text-xs text-slate-500">
+            The remaining balance of ₹{(cartTotal - 10000).toLocaleString('en-IN')} will be paid before delivery.
+          </p>
         </div>
       </div>
     </div>
