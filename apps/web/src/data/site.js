@@ -321,7 +321,14 @@ export const products = categories.flatMap(category =>
           finalGallery = [];
         }
 
+        if (base.slug === '20hp-double-stage-pulverizer' && category.slug === 'masala-grinding') {
+          finalImage = '/media/masala-20hp-unique.jpg';
+          finalGallery.unshift('/media/masala-20hp-unique.jpg');
+        }
+
         if (category.slug === 'haldi-grinding-with-cyclone') {
+          finalImage = '/media/haldi-cyclone-1.jpg';
+          finalGallery.unshift('/media/haldi-cyclone-1.jpg', '/media/haldi-cyclone-2.jpg');
           if (base.power === '30 HP') {
             finalImage = '/media/30hp-haldi-cyclone.jpg';
           } else if (base.power === '20 HP') {
