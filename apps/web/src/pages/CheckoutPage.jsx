@@ -61,8 +61,8 @@ const CheckoutPage = () => {
     const amountInPaisa = 10000 * 100;
 
     const options = {
-      // Use test key if no live key is provided
-      key: "rzp_test_TSpqFvligr6jjC",
+      // Use live key
+      key: "rzp_live_TUmhhbbddSN5xH",
       amount: amountInPaisa,
       currency: "INR",
       name: "Jay Ambe Food Machinery",
