@@ -160,7 +160,7 @@ const ProductDetailPage = () => {
                 href={waLink(`Hello! I am interested in the ${product.name}${product.price ? ` (${product.price})` : ''}. Can you provide more details?`)}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex min-h-[48px] items-center gap-2 rounded-sm border-2 border-[#25D366] px-6 py-3 text-sm font-semibold uppercase tracking-wide text-[#128C4A] transition-colors hover:bg-[#25D366] hover:text-white active:scale-[0.98]"
+                className="inline-flex min-h-[48px] items-center gap-2 rounded-sm border-[1.5px] border-green-600 bg-white px-6 py-3 text-sm font-semibold uppercase tracking-wide text-green-700 transition-colors hover:bg-green-50 active:scale-[0.98]"
               >
                 <WhatsAppIcon className="h-5 w-5 fill-current" /> WhatsApp
               </a>
