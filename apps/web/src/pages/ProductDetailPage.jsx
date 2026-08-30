@@ -8,7 +8,7 @@ import Reveal from '@/components/Reveal';
 import Seo from '@/components/Seo';
 import ProductCard from '@/components/ProductCard';
 import EnquiryForm from '@/components/EnquiryForm';
-import { company, products } from '@/data/site';
+import { company, products, waLink } from '@/data/site';
 import { useCart } from '../context/CartContext';
 
 const AOR = 'Available on request';
@@ -156,6 +156,14 @@ const ProductDetailPage = () => {
               >
                 <FileText className="h-4 w-4" strokeWidth={2.5} /> Get Quote
               </Link>
+              <a
+                href={waLink(`Hello! I am interested in the ${product.name}${product.price ? ` (${product.price})` : ''}. Can you provide more details?`)}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex min-h-[48px] items-center gap-2 rounded-sm border-2 border-[#25D366] px-6 py-3 text-sm font-semibold uppercase tracking-wide text-[#128C4A] transition-colors hover:bg-[#25D366] hover:text-white active:scale-[0.98]"
+              >
+                <WhatsAppIcon className="h-5 w-5 fill-current" /> WhatsApp
+              </a>
             </div>
 
             <p className="mt-5 text-sm leading-relaxed text-slate-600">
