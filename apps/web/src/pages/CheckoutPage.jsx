@@ -57,8 +57,8 @@ const CheckoutPage = () => {
       return;
     }
 
-    // Fixed Booking Advance: ₹10,000
-    const amountInPaisa = 10000 * 100;
+    // Full Payment
+    const amountInPaisa = cartTotal * 100;
 
     const options = {
       // Use live key
@@ -271,14 +271,14 @@ const CheckoutPage = () => {
           </div>
 
           <div className="mt-6 flex items-center justify-between border-t border-slate-200 pt-6">
-            <span className="text-lg font-bold text-slate-800">Booking Advance</span>
+            <span className="text-lg font-bold text-slate-800">Total Amount Payable</span>
             <span className="text-2xl font-bold text-brand-red">
               <span className="text-sm text-brand-red/70 font-normal mr-2">INR</span>
-              ₹10,000
+              ₹{cartTotal.toLocaleString('en-IN')}
             </span>
           </div>
           <p className="mt-2 text-right text-xs text-slate-500">
-            The remaining balance of ₹{(cartTotal - 10000).toLocaleString('en-IN')} will be paid before delivery.
+            This covers the full cost of your machines. Secure payment via Razorpay.
           </p>
         </div>
       </div>
