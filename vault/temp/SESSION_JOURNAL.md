@@ -4970,3 +4970,557 @@
 - url: http://localhost:3002/
 - via: pushState
 
+## 2026-09-01 20:40:57.777Z load
+- url: http://localhost:3000/
+- title: Jay Ambe Food Machinery | Premium Commercial Grinding Solutions
+
+## 2026-09-01 20:40:57.898Z navigate
+- url: http://localhost:3000/
+- via: replaceState
+
+## 2026-09-01 20:40:58.047Z network.error
+- method: POST
+- url: https://www.google.com/ccm/collect?rcb=4&frm=0&apvc=1&auid=1603470718.1787307121&dt=Jay%20Ambe%20Food%20Machinery%20%7C%20Premium%20Commercial%20Grinding%20Solutions&tid=AW-11334117890&en=page_view&dl=http%3A%2F%2Flocalhost%3A3000%2F&scrsrc=www.googletagmanager.com&rnd=1234150286.1788295258&navt=n&npa=0&gtm=45be68v0v9213744267za200zd9213744267xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938469~118897920~118897930~120385423~120670646&tft=1788295257821&tfd=618&tids=AW-11334117890&fmt=8
+- status: 0
+- durationMs: 225
+
+## 2026-09-01 20:40:58.047Z console.error
+- text: Fetch error from : 
+
+## 2026-09-01 20:40:58.106Z network.error
+- method: POST
+- url: https://ad.doubleclick.net/ccm/s/collect?auid=1603470718.1787307121&gtm=45be68v0v9213744267za200zd9213744267xec&fmt=8
+- status: 0
+- durationMs: 284
+
+## 2026-09-01 20:40:58.106Z console.error
+- text: Fetch error from : 
+
+## 2026-09-01 20:40:58.346Z network.error
+- method: POST
+- url: https://www.google.com/rmkt/collect/11334117890/?random=1788295257813&cv=11&fst=1788295257813&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be68v0v9213744267za200zd9213744267xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938469~118897920~118897930~120385423~120670646&u_w=1728&u_h=1117&url=http%3A%2F%2Flocalhost%3A3000%2F&rcb=4&frm=0&tiba=Jay%20Ambe%20Food%20Machinery%20%7C%20Premium%20Commercial%20Grinding%20Solutions&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1603470718.1787307121&uaa=arm&uab=64&uafvl=Chromium%3B152.0.7977.65%7CNot%253FA_Brand%3B24.0.0.0%7CGoogle%2520Chrome%3B152.0.7977.65&uamb=0&uam=&uap=macOS&uapv=26.6.2&uaw=0&data=event%3Dgtag.config&ept=68&gcp=5
+- status: 0
+- durationMs: 525
+
+## 2026-09-01 20:40:58.346Z console.error
+- text: Fetch error from : 
+
+## 2026-09-01 20:41:19.480Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Why Choose Us"}
+
+## 2026-09-01 20:41:19.481Z navigate
+- url: http://localhost:3000/why-choose-us
+- via: pushState
+
+## 2026-09-01 20:41:21.830Z click
+- element: {"tag":"button","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Products "}
+
+## 2026-09-01 20:41:22.879Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Atta Chakki"}
+
+## 2026-09-01 20:41:22.880Z navigate
+- url: http://localhost:3000/category/atta-chakki
+- via: pushState
+
+## 2026-09-01 20:41:24.044Z click
+- element: {"tag":"a","role":null,"ariaLabel":"View details for Atta Chakki 7.5HP Double Stage Pulverizer Machine","name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Three Phase | Model No: JADS-02"}
+
+## 2026-09-01 20:41:24.044Z navigate
+- url: http://localhost:3000/products/atta-chakki-7-5hp-double-stage-pulverizer
+- via: pushState
+
+## 2026-09-01 20:41:26.395Z click
+- element: {"tag":"button","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":" Add to Cart"}
+
+## 2026-09-01 20:41:29.195Z click
+- element: {"tag":"button","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Checkout "}
+
+## 2026-09-01 20:41:29.196Z navigate
+- url: http://localhost:3000/checkout
+- via: pushState
+
+## 2026-09-01 20:41:33.780Z navigate
+- url: http://localhost:3000/products/atta-chakki-7-5hp-double-stage-pulverizer
+- via: popstate
+
+## 2026-09-01 20:44:14.970Z click
+- element: {"tag":"button","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":" Add to Cart"}
+
+## 2026-09-01 20:44:20.104Z click
+- element: {"tag":"button","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":""}
+
+## 2026-09-01 20:44:22.637Z click
+- element: {"tag":"button","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":""}
+
+## 2026-09-01 20:44:24.487Z click
+- element: {"tag":"button","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Checkout "}
+
+## 2026-09-01 20:44:24.488Z navigate
+- url: http://localhost:3000/checkout
+- via: pushState
+
+## 2026-09-01 20:48:46.756Z load
+- url: http://localhost:3000/checkout
+- title: Jay Ambe Food Machinery | Premium Commercial Grinding Solutions
+
+## 2026-09-01 20:48:46.912Z network.error
+- method: POST
+- url: https://www.google.com/ccm/collect?rcb=16&frm=0&apvc=1&auid=1603470718.1787307121&dt=Jay%20Ambe%20Food%20Machinery%20%7C%20Premium%20Commercial%20Grinding%20Solutions&tid=AW-11334117890&en=page_view&dl=http%3A%2F%2Flocalhost%3A3000%2Fcheckout&scrsrc=www.googletagmanager.com&rnd=1201215014.1788295727&navt=r&npa=0&gtm=45be68v0v9213744267za200zd9213744267xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938468~118897920~118897930~120385422~120670646&tft=1788295726779&tfd=469&tids=AW-11334117890&fmt=8
+- status: 0
+- durationMs: 133
+
+## 2026-09-01 20:48:46.912Z console.error
+- text: Fetch error from : 
+
+## 2026-09-01 20:48:46.918Z network.error
+- method: POST
+- url: https://www.google.com/rmkt/collect/11334117890/?random=1788295726770&cv=11&fst=1788295726770&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be68v0v9213744267za200zd9213744267xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938468~118897920~118897930~120385422~120670646&u_w=1728&u_h=1117&url=http%3A%2F%2Flocalhost%3A3000%2Fcheckout&rcb=16&frm=0&tiba=Jay%20Ambe%20Food%20Machinery%20%7C%20Premium%20Commercial%20Grinding%20Solutions&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1603470718.1787307121&uaa=arm&uab=64&uafvl=Chromium%3B152.0.7977.65%7CNot%253FA_Brand%3B24.0.0.0%7CGoogle%2520Chrome%3B152.0.7977.65&uamb=0&uam=&uap=macOS&uapv=26.6.2&uaw=0&data=event%3Dgtag.config&ept=68&gcp=5
+- status: 0
+- durationMs: 138
+
+## 2026-09-01 20:48:46.918Z console.error
+- text: Fetch error from : 
+
+## 2026-09-01 20:48:46.946Z network.error
+- method: POST
+- url: https://ad.doubleclick.net/ccm/s/collect?auid=1603470718.1787307121&gtm=45be68v0v9213744267za200zd9213744267xec&fmt=8
+- status: 0
+- durationMs: 166
+
+## 2026-09-01 20:48:46.946Z console.error
+- text: Fetch error from : 
+
+## 2026-09-01 20:48:49.898Z navigate
+- url: http://localhost:3000/products/atta-chakki-7-5hp-double-stage-pulverizer
+- via: popstate
+
+## 2026-09-01 20:48:52.850Z click
+- element: {"tag":"button","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":" Add to Cart"}
+
+## 2026-09-01 20:48:56.443Z click
+- element: {"tag":"button","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":""}
+
+## 2026-09-01 20:48:58.957Z click
+- element: {"tag":"button","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Checkout "}
+
+## 2026-09-01 20:48:58.958Z navigate
+- url: http://localhost:3000/checkout
+- via: pushState
+
+## 2026-09-01 20:49:00.913Z click
+- element: {"tag":"button","role":null,"ariaLabel":null,"name":null,"type":"submit","id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Pay now "}
+
+## 2026-09-01 20:49:00.914Z focus
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":null,"type":"text","id":null,"placeholder":"Email or mobile phone number","label":"Email or mobile phone number","value":"","valueLength":0,"text":""}
+
+## 2026-09-01 20:50:46.094Z focus
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":null,"type":"text","id":null,"placeholder":"Email or mobile phone number","label":"Email or mobile phone number","value":"","valueLength":0,"text":""}
+
+## 2026-09-01 20:50:46.342Z load
+- url: http://localhost:3000/checkout
+- title: Jay Ambe Food Machinery | Premium Commercial Grinding Solutions
+
+## 2026-09-01 20:50:46.385Z navigate
+- url: http://localhost:3000/checkout
+- via: replaceState
+
+## 2026-09-01 20:50:46.595Z network.error
+- method: POST
+- url: https://www.google.com/ccm/collect?rcb=7&frm=0&apvc=1&auid=1603470718.1787307121&dt=Checkout%20-%20Jay%20Ambe%20Food%20Machinery&tid=AW-11334117890&en=page_view&dl=http%3A%2F%2Flocalhost%3A3000%2Fcheckout&scrsrc=www.googletagmanager.com&rnd=505557841.1788295846&navt=n&npa=0&gtm=45be68v0v9213744267za200zd9213744267xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938469~118897920~118897930~120385423~120469145~120469153~120670646&tft=1788295846454&tfd=341&tids=AW-11334117890&fmt=8
+- status: 0
+- durationMs: 141
+
+## 2026-09-01 20:50:46.595Z console.error
+- text: Fetch error from : 
+
+## 2026-09-01 20:50:46.600Z network.error
+- method: POST
+- url: https://www.google.com/rmkt/collect/11334117890/?random=1788295846446&cv=11&fst=1788295846446&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be68v0v9213744267za200zd9213744267xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938469~118897920~118897930~120385423~120469145~120469153~120670646&u_w=1728&u_h=1117&url=http%3A%2F%2Flocalhost%3A3000%2Fcheckout&rcb=7&frm=0&tiba=Checkout%20-%20Jay%20Ambe%20Food%20Machinery&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1603470718.1787307121&uaa=arm&uab=64&uafvl=Chromium%3B152.0.7977.65%7CNot%253FA_Brand%3B24.0.0.0%7CGoogle%2520Chrome%3B152.0.7977.65&uamb=0&uam=&uap=macOS&uapv=26.6.2&uaw=0&data=event%3Dgtag.config&ept=68&gcp=5
+- status: 0
+- durationMs: 147
+
+## 2026-09-01 20:50:46.600Z console.error
+- text: Fetch error from : 
+
+## 2026-09-01 20:50:46.604Z network.error
+- method: POST
+- url: https://ad.doubleclick.net/ccm/s/collect?auid=1603470718.1787307121&gtm=45be68v0v9213744267za200zd9213744267xec&fmt=8
+- status: 0
+- durationMs: 150
+
+## 2026-09-01 20:50:46.604Z console.error
+- text: Fetch error from : 
+
+## 2026-09-01 20:50:56.286Z load
+- url: http://localhost:3000/checkout
+- title: Jay Ambe Food Machinery | Premium Commercial Grinding Solutions
+
+## 2026-09-01 20:50:58.411Z focus
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":null,"type":"text","id":null,"placeholder":"Email or mobile phone number","label":"Email or mobile phone number","value":"","valueLength":0,"text":""}
+
+## 2026-09-01 20:51:01.252Z focus
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":null,"type":"text","id":null,"placeholder":"Email or mobile phone number","label":"Email or mobile phone number","value":"","valueLength":0,"text":""}
+
+## 2026-09-01 20:51:03.430Z navigate
+- url: http://localhost:3000/products/atta-chakki-7-5hp-double-stage-pulverizer
+- via: popstate
+
+## 2026-09-01 20:51:07.862Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Chilly Grinding with Cyclone"}
+
+## 2026-09-01 20:51:07.863Z navigate
+- url: http://localhost:3000/category/chilly-grinding-with-cyclone
+- via: pushState
+
+## 2026-09-01 20:51:08.964Z click
+- element: {"tag":"a","role":null,"ariaLabel":"View details for Chilly Grinding 7.5HP Double Stage Pulverizer Machine With Cyclone","name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Three Phase | Model No: JADSC-02"}
+
+## 2026-09-01 20:51:08.964Z navigate
+- url: http://localhost:3000/products/chilly-grinding-with-cyclone-7-5hp-double-stage-pulverizer-with-cyclone
+- via: pushState
+
+## 2026-09-01 20:51:10.571Z click
+- element: {"tag":"button","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":" Add to Cart"}
+
+## 2026-09-01 20:51:13.910Z click
+- element: {"tag":"button","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":""}
+
+## 2026-09-01 20:51:15.127Z click
+- element: {"tag":"button","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Checkout "}
+
+## 2026-09-01 20:51:15.128Z navigate
+- url: http://localhost:3000/checkout
+- via: pushState
+
+## 2026-09-01 20:51:17.694Z click
+- element: {"tag":"button","role":null,"ariaLabel":null,"name":null,"type":"submit","id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Pay now "}
+
+## 2026-09-01 20:51:17.695Z focus
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":null,"type":"text","id":null,"placeholder":"Email or mobile phone number","label":"Email or mobile phone number","value":"","valueLength":0,"text":""}
+
+## 2026-09-01 20:51:20.411Z click
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":null,"type":"text","id":null,"placeholder":"Email or mobile phone number","label":"Email or mobile phone number","value":"","valueLength":0,"text":""}
+
+## 2026-09-01 20:51:21.249Z change
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":null,"type":"text","id":null,"placeholder":"Email or mobile phone number","label":"Email or mobile phone number","value":"kananibrijeshkumar@gmail.com","valueLength":28,"text":""}
+
+## 2026-09-01 20:51:21.261Z blur
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":null,"type":"text","id":null,"placeholder":"Email or mobile phone number","label":"Email or mobile phone number","value":"kananibrijeshkumar@gmail.com","valueLength":28,"text":""}
+
+## 2026-09-01 20:51:21.261Z focus
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":null,"type":"text","id":null,"placeholder":"First name","label":"First name","value":"","valueLength":0,"text":""}
+
+## 2026-09-01 20:51:21.262Z change
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":null,"type":"text","id":null,"placeholder":"First name","label":"First name","value":"brijeshkumar","valueLength":12,"text":""}
+
+## 2026-09-01 20:51:21.262Z blur
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":null,"type":"text","id":null,"placeholder":"First name","label":"First name","value":"brijeshkumar","valueLength":12,"text":""}
+
+## 2026-09-01 20:51:21.262Z focus
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":null,"type":"text","id":null,"placeholder":"Last name","label":"Last name","value":"","valueLength":0,"text":""}
+
+## 2026-09-01 20:51:21.263Z change
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":null,"type":"text","id":null,"placeholder":"Last name","label":"Last name","value":"kanani","valueLength":6,"text":""}
+
+## 2026-09-01 20:51:21.263Z blur
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":null,"type":"text","id":null,"placeholder":"Last name","label":"Last name","value":"kanani","valueLength":6,"text":""}
+
+## 2026-09-01 20:51:21.263Z focus
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":null,"type":"text","id":null,"placeholder":"Email or mobile phone number","label":"Email or mobile phone number","value":"kananibrijeshkumar@gmail.com","valueLength":28,"text":""}
+
+## 2026-09-01 20:51:21.408Z network.error
+- method: POST
+- url: https://www.google.com/ccm/form-data/11334117890?gtm=45be68v0v9213744267za200zd9213744267xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938468~118897920~118897930~120385422~120670646&rcb=16&npa=0&frm=0&ae=a&pscdl=noapi&auid=1603470718.1787307121&uaa=arm&uab=64&uafvl=Chromium%3B152.0.7977.65%7CNot%253FA_Brand%3B24.0.0.0%7CGoogle%2520Chrome%3B152.0.7977.65&uamb=0&uam=&uap=macOS&uapv=26.6.2&uaw=0&ec_mode=a&ecsid2=1338489328.1788295881&gap.fsrc=1&gap.dlst=0.09&gap.dlsc=3&em=tv.1~ec.e3&emd=tvd.1&fmt=8
+- status: 0
+- durationMs: 150
+
+## 2026-09-01 20:51:21.408Z console.error
+- text: Fetch error from : 
+
+## 2026-09-01 20:51:21.409Z network.error
+- method: POST
+- url: https://www.google.com/pagead/form-data/11334117890?gtm=45be68v0v9213744267za200zd9213744267xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938468~118897920~118897930~120385422~120670646&rcb=16&npa=0&frm=0&pscdl=noapi&ae=a&auid=1603470718.1787307121&uaa=arm&uab=64&uafvl=Chromium%3B152.0.7977.65%7CNot%253FA_Brand%3B24.0.0.0%7CGoogle%2520Chrome%3B152.0.7977.65&uamb=0&uam=&uap=macOS&uapv=26.6.2&uaw=0&gap.fsrc=1&fmt=8
+- status: 0
+- durationMs: 153
+
+## 2026-09-01 20:51:21.409Z console.error
+- text: Fetch error from : 
+
+## 2026-09-01 20:51:21.410Z network.error
+- method: POST
+- url: https://www.google.com/rmkt/collect/11334117890/?random=1788295881251&cv=11&fst=1788295881251&fmt=8&bg=ffffff&guid=ON&async=1&en=form_start&gtm=45be68v0v9213744267za200zd9213744267xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938468~118897920~118897930~120385422~120670646&u_w=1728&u_h=1117&url=http%3A%2F%2Flocalhost%3A3000%2Fcheckout&rcb=16&frm=0&tiba=Checkout%20-%20Jay%20Ambe%20Food%20Machinery&ae=a&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1603470718.1787307121&uaa=arm&uab=64&uafvl=Chromium%3B152.0.7977.65%7CNot%253FA_Brand%3B24.0.0.0%7CGoogle%2520Chrome%3B152.0.7977.65&uamb=0&uam=&uap=macOS&uapv=26.6.2&uaw=0&data=event%3Dform_start&gap.fsrc=1&ept=68&gcp=5
+- status: 0
+- durationMs: 150
+
+## 2026-09-01 20:51:21.410Z console.error
+- text: Fetch error from : 
+
+## 2026-09-01 20:51:22.197Z blur
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":null,"type":"text","id":null,"placeholder":"Email or mobile phone number","label":"Email or mobile phone number","value":"kananibrijeshkumar@gmail.com","valueLength":28,"text":""}
+
+## 2026-09-01 20:51:22.198Z focus
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":null,"type":"text","id":null,"placeholder":"Address","label":"Address","value":"","valueLength":0,"text":""}
+
+## 2026-09-01 20:51:22.301Z click
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":null,"type":"text","id":null,"placeholder":"Address","label":"Address","value":"","valueLength":0,"text":""}
+
+## 2026-09-01 20:51:28.655Z change
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":null,"type":"text","id":null,"placeholder":"Address","label":"Address","value":"amdavad","valueLength":7,"text":""}
+
+## 2026-09-01 20:51:28.656Z blur
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":null,"type":"text","id":null,"placeholder":"Address","label":"Address","value":"amdavad","valueLength":7,"text":""}
+
+## 2026-09-01 20:51:28.657Z focus
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":null,"type":"text","id":null,"placeholder":"City","label":"City","value":"","valueLength":0,"text":""}
+
+## 2026-09-01 20:51:28.670Z click
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":null,"type":"text","id":null,"placeholder":"City","label":"City","value":"","valueLength":0,"text":""}
+
+## 2026-09-01 20:51:35.972Z change
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":null,"type":"text","id":null,"placeholder":"City","label":"City","value":"ahmedabad","valueLength":9,"text":""}
+
+## 2026-09-01 20:51:35.973Z blur
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":null,"type":"text","id":null,"placeholder":"City","label":"City","value":"ahmedabad","valueLength":9,"text":""}
+
+## 2026-09-01 20:51:35.974Z focus
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":null,"type":"text","id":null,"placeholder":"PIN code","label":"PIN code","value":"","valueLength":0,"text":""}
+
+## 2026-09-01 20:51:35.987Z click
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":null,"type":"text","id":null,"placeholder":"PIN code","label":"PIN code","value":"","valueLength":0,"text":""}
+
+## 2026-09-01 20:51:42.439Z change
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":null,"type":"text","id":null,"placeholder":"PIN code","label":"PIN code","value":"382350","valueLength":6,"text":""}
+
+## 2026-09-01 20:51:42.440Z blur
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":null,"type":"text","id":null,"placeholder":"PIN code","label":"PIN code","value":"382350","valueLength":6,"text":""}
+
+## 2026-09-01 20:51:42.453Z click
+- element: {"tag":"button","role":null,"ariaLabel":null,"name":null,"type":"submit","id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Pay now "}
+
+## 2026-09-01 20:51:42.455Z submit
+- action: http://localhost:3000/checkout
+- fields: [{"label":"Email or mobile phone number","type":"text","value":"kananibrijeshkumar@gmail.com","length":28,"redacted":false},{"label":"First name","type":"text","value":"brijeshkumar","length":12,"redacted":false},{"label":"Last name","type":"text","value":"kanani","length":6,"redacted":false},{"label":"Address","type":"text","value":"amdavad","length":7,"redacted":false},{"label":"City","type":"text","value":"ahmedabad","length":9,"redacted":false},{"label":"[select]","type":"select-one","value":"Gujarat","length":7,"redacted":false},{"label":"PIN code","type":"text","value":"382350","length":6,"redacted":false},{"label":"[button]","type":"button","value":"","length":0,"redacted":false},{"label":"[submit]","type":"submit","value":"","length":0,"redacted":false}]
+
+## 2026-09-01 20:51:42.645Z network.error
+- method: POST
+- url: https://www.google.com/pagead/form-data/11334117890?gtm=45be68v0v9213744267za200zd9213744267xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938468~118897920~118897930~120385422~120670646&rcb=16&npa=0&frm=0&pscdl=noapi&ae=a&auid=1603470718.1787307121&uaa=arm&uab=64&uafvl=Chromium%3B152.0.7977.65%7CNot%253FA_Brand%3B24.0.0.0%7CGoogle%2520Chrome%3B152.0.7977.65&uamb=0&uam=&uap=macOS&uapv=26.6.2&uaw=0&gap.fsrc=2&fmt=8
+- status: 0
+- durationMs: 182
+
+## 2026-09-01 20:51:42.646Z console.error
+- text: Fetch error from : 
+
+## 2026-09-01 20:51:42.649Z network.error
+- method: POST
+- url: https://www.google.com/ccm/form-data/11334117890?gtm=45be68v0v9213744267za200zd9213744267xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938468~118897920~118897930~120385422~120670646&rcb=16&npa=0&frm=0&ae=a&pscdl=noapi&auid=1603470718.1787307121&uaa=arm&uab=64&uafvl=Chromium%3B152.0.7977.65%7CNot%253FA_Brand%3B24.0.0.0%7CGoogle%2520Chrome%3B152.0.7977.65&uamb=0&uam=&uap=macOS&uapv=26.6.2&uaw=0&ec_mode=a&ecsid2=1338489328.1788295881&gap.fsrc=2&gap.dlst=0.19&gap.dlsc=10&em=tv.1~ec.e3&emd=tvd.1&fmt=8
+- status: 0
+- durationMs: 182
+
+## 2026-09-01 20:51:42.649Z console.error
+- text: Fetch error from : 
+
+## 2026-09-01 20:51:42.649Z network.error
+- method: POST
+- url: https://www.google.com/rmkt/collect/11334117890/?random=1788295902459&cv=11&fst=1788295902459&fmt=8&bg=ffffff&guid=ON&async=1&en=form_submit&gtm=45be68v0v9213744267za200zd9213744267xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938468~118897920~118897930~120385422~120670646&u_w=1728&u_h=1117&url=http%3A%2F%2Flocalhost%3A3000%2Fcheckout&rcb=16&frm=0&tiba=Checkout%20-%20Jay%20Ambe%20Food%20Machinery&ae=a&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1603470718.1787307121&uaa=arm&uab=64&uafvl=Chromium%3B152.0.7977.65%7CNot%253FA_Brand%3B24.0.0.0%7CGoogle%2520Chrome%3B152.0.7977.65&uamb=0&uam=&uap=macOS&uapv=26.6.2&uaw=0&data=event%3Dform_submit&gap.fsrc=2&ept=68&gcp=5
+- status: 0
+- durationMs: 182
+
+## 2026-09-01 20:51:42.649Z console.error
+- text: Fetch error from : 
+
+## 2026-09-01 20:51:56.075Z navigate
+- url: http://localhost:3000/products/chilly-grinding-with-cyclone-7-5hp-double-stage-pulverizer-with-cyclone
+- via: popstate
+
+## 2026-09-01 20:51:57.237Z navigate
+- url: http://localhost:3000/category/chilly-grinding-with-cyclone
+- via: popstate
+
+## 2026-09-01 20:51:58.800Z load
+- url: http://localhost:3000/category/chilly-grinding-with-cyclone
+- title: Jay Ambe Food Machinery | Premium Commercial Grinding Solutions
+
+## 2026-09-01 23:06:21.191Z load
+- url: http://localhost:3000/category/chilly-grinding-with-cyclone
+- title: Jay Ambe Food Machinery | Premium Commercial Grinding Solutions
+
+## 2026-09-02 02:23:20.964Z load
+- url: http://localhost:3000/category/chilly-grinding-with-cyclone
+- title: Jay Ambe Food Machinery | Premium Commercial Grinding Solutions
+
+## 2026-09-02 02:23:21.353Z network.error
+- method: POST
+- url: https://www.google.com/ccm/collect?rcb=12&frm=0&apvc=1&auid=1603470718.1787307121&dt=Jay%20Ambe%20Food%20Machinery%20%7C%20Premium%20Commercial%20Grinding%20Solutions&tid=AW-11334117890&en=page_view&dl=http%3A%2F%2Flocalhost%3A3000%2Fcategory%2Fchilly-grinding-with-cyclone&dr=http%3A%2F%2Flocalhost%3A3000%2Fcategory%2Fchilly-grinding-with-cyclone&scrsrc=www.googletagmanager.com&rnd=478217136.1788315801&navt=r&npa=0&gtm=45be68v1v9213744267za200zd9213744267xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938465~115938469~118897920~118897930~120385423~120670646&tft=1788315801117&tfd=403&tids=AW-11334117890&fmt=8
+- status: 0
+- durationMs: 235
+
+## 2026-09-02 02:23:21.353Z console.error
+- text: Fetch error from : 
+
+## 2026-09-02 02:23:21.358Z network.error
+- method: POST
+- url: https://www.google.com/rmkt/collect/11334117890/?random=1788315801107&cv=11&fst=1788315801107&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be68v1v9213744267za200zd9213744267xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938465~115938469~118897920~118897930~120385423~120670646&u_w=1728&u_h=1117&url=http%3A%2F%2Flocalhost%3A3000%2Fcategory%2Fchilly-grinding-with-cyclone&ref=http%3A%2F%2Flocalhost%3A3000%2Fcategory%2Fchilly-grinding-with-cyclone&rcb=12&frm=0&tiba=Jay%20Ambe%20Food%20Machinery%20%7C%20Premium%20Commercial%20Grinding%20Solutions&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1603470718.1787307121&uaa=arm&uab=64&uafvl=Chromium%3B152.0.7977.65%7CNot%253FA_Brand%3B24.0.0.0%7CGoogle%2520Chrome%3B152.0.7977.65&uamb=0&uam=&uap=macOS&uapv=26.6.2&uaw=0&data=event%3Dgtag.config&ept=68&gcp=5
+- status: 0
+- durationMs: 241
+
+## 2026-09-02 02:23:21.358Z console.error
+- text: Fetch error from : 
+
+## 2026-09-02 02:23:21.373Z network.error
+- method: POST
+- url: https://ad.doubleclick.net/ccm/s/collect?auid=1603470718.1787307121&gtm=45be68v1v9213744267za200zd9213744267xec&fmt=8
+- status: 0
+- durationMs: 256
+
+## 2026-09-02 02:23:21.373Z console.error
+- text: Fetch error from : 
+
+## 2026-09-02 04:12:09.523Z load
+- url: http://localhost:3000/category/chilly-grinding-with-cyclone
+- title: Jay Ambe Food Machinery | Premium Commercial Grinding Solutions
+
+## 2026-09-02 04:12:09.929Z network.error
+- method: POST
+- url: https://www.google.com/ccm/collect?rcb=15&frm=0&apvc=1&auid=1603470718.1787307121&dt=Jay%20Ambe%20Food%20Machinery%20%7C%20Premium%20Commercial%20Grinding%20Solutions&tid=AW-11334117890&en=page_view&dl=http%3A%2F%2Flocalhost%3A3000%2Fcategory%2Fchilly-grinding-with-cyclone&dr=http%3A%2F%2Flocalhost%3A3000%2Fcategory%2Fchilly-grinding-with-cyclone&scrsrc=www.googletagmanager.com&rnd=1727942545.1788322330&navt=r&npa=0&gtm=45be6910h2v9213744267za200zd9213744267xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938468~118897920~118897930~119791748~120385422~120469146~120469154~120670646&tft=1788322329706&tfd=440&tids=AW-11334117890&fmt=8
+- status: 0
+- durationMs: 223
+
+## 2026-09-02 04:12:09.929Z console.error
+- text: Fetch error from : 
+
+## 2026-09-02 04:12:09.982Z network.error
+- method: POST
+- url: https://ad.doubleclick.net/ccm/s/collect?auid=1603470718.1787307121&gtm=45be6910h2v9213744267za200zd9213744267xec&fmt=8
+- status: 0
+- durationMs: 275
+
+## 2026-09-02 04:12:09.982Z console.error
+- text: Fetch error from : 
+
+## 2026-09-02 04:12:10.201Z network.error
+- method: POST
+- url: https://www.google.com/rmkt/collect/11334117890/?random=1788322329695&cv=11&fst=1788322329695&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6910h2v9213744267za200zd9213744267xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938468~118897920~118897930~119791748~120385422~120469146~120469154~120670646&u_w=1728&u_h=1117&url=http%3A%2F%2Flocalhost%3A3000%2Fcategory%2Fchilly-grinding-with-cyclone&ref=http%3A%2F%2Flocalhost%3A3000%2Fcategory%2Fchilly-grinding-with-cyclone&rcb=15&frm=0&tiba=Jay%20Ambe%20Food%20Machinery%20%7C%20Premium%20Commercial%20Grinding%20Solutions&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1603470718.1787307121&uaa=arm&uab=64&uafvl=Chromium%3B152.0.7977.65%7CNot%253FA_Brand%3B24.0.0.0%7CGoogle%2520Chrome%3B152.0.7977.65&uamb=0&uam=&uap=macOS&uapv=26.6.2&uaw=0&data=event%3Dgtag.config&ept=68&gcp=5
+- status: 0
+- durationMs: 495
+
+## 2026-09-02 04:12:10.201Z console.error
+- text: Fetch error from : 
+
+## 2026-09-02 04:21:23.923Z network.error
+- method: POST
+- url: https://translate.googleapis.com/element/log?format=json&hasfast=true&authuser=%5Bredacted%5D
+- requestBody: [Uint8Array body]
+- message: Failed to fetch
+- durationMs: 8
+
+## 2026-09-02 04:21:23.924Z console.error
+- text: 
+    TypeError: Failed to fetch
+        at window.fetch (http://localhost:3000/@id/virtual:session-journal-client:328:28)
+        at window.fetch (http://localhost:3000/category/chilly-grinding-with-cyclone:534:23)
+        at Si.j (https://translate.googleapis.com/_/translate_http/_/js/k=translate_http.tr.en_GB.0BajhZzZF1I.O/am=BECAAQ/d=1/ed=1/rs=AN8SPfqGlFW8NqNQIgLZinvARUlBZMzFDg/m=el_main:241:382)
+        at Ui (https://translate.googleapis.com/_/translate_http/_/js/k=translate_http.tr.en_GB.0BajhZzZF1I.O/am=BECAAQ/d=1/ed=1/rs=AN8SPfqGlFW8NqNQIgLZinvARUlBZMzFDg/m=el_main:194:40)
+        at Wi.next (https://translate.googleapis.com/_/translate_http/_/js/k=translate_http.tr.en_GB.0BajhZzZF1I.O/am=BECAAQ/d=1/ed=1/rs=AN8SPfqGlFW8NqNQIgLZinvARUlBZMzFDg/m=el_main:195:91)
+        at https://translate.googleapis.com/_/translate_http/_/js/k=translate_http.tr.en_GB.0BajhZzZF1I.O/am=BECAAQ/d=1/ed=1/rs=AN8SPfqGlFW8NqNQIgLZinvARUlBZMzFDg/m=el_main:196:193
+        at new Promise (<anonymous>)
+        at Xi (https://translate.googleapis.com/_/translate_http/_/js/k=translate_http.tr.en_GB.0BajhZzZF1I.O/am=BECAAQ/d=1/ed=1/rs=AN8SPfqGlFW8NqNQIgLZinvARUlBZMzFDg/m=el_main:196:86)
+        at _.Yi (https://translate.googleapis.com/_/translate_http/_/js/k=translate_http.tr.en_GB.0BajhZzZF1I.O/am=BECAAQ/d=1/ed=1/rs=AN8SPfqGlFW8NqNQIgLZinvARUlBZMzFDg/m=el_main:196:228)
+        at il.send (https://translate.googleapis.com/_/translate_http/_/js/k=translate_http.tr.en_GB.0BajhZzZF1I.O/am=BECAAQ/d=1/ed=1/rs=AN8SPfqGlFW8NqNQIgLZinvARUlBZMzFDg/m=el_main:241:75)
+
+## 2026-09-02 14:27:15.296Z load
+- url: http://localhost:3000/category/chilly-grinding-with-cyclone
+- title: Jay Ambe Food Machinery | Premium Commercial Grinding Solutions
+
+## 2026-09-02 14:27:15.499Z network.error
+- method: POST
+- url: https://www.google.com/ccm/collect?rcb=4&frm=0&apvc=1&auid=1603470718.1787307121&dt=Jay%20Ambe%20Food%20Machinery%20%7C%20Premium%20Commercial%20Grinding%20Solutions&tid=AW-11334117890&en=page_view&dl=http%3A%2F%2Flocalhost%3A3000%2Fcategory%2Fchilly-grinding-with-cyclone&dr=http%3A%2F%2Flocalhost%3A3000%2Fcategory%2Fchilly-grinding-with-cyclone&scrsrc=www.googletagmanager.com&rnd=1786962522.1788359235&navt=r&npa=0&gtm=45be68v1v9213744267za200zd9213744267xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616985~115938466~115938469~118897920~118897930~119259606~120385423~120670646&tft=1788359235363&tfd=453&tids=AW-11334117890&fmt=8
+- status: 0
+- durationMs: 136
+
+## 2026-09-02 14:27:15.499Z console.error
+- text: Fetch error from : 
+
+## 2026-09-02 14:27:15.502Z network.error
+- method: POST
+- url: https://www.google.com/rmkt/collect/11334117890/?random=1788359235350&cv=11&fst=1788359235350&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be68v1v9213744267za200zd9213744267xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616985~115938466~115938469~118897920~118897930~119259606~120385423~120670646&u_w=1728&u_h=1117&url=http%3A%2F%2Flocalhost%3A3000%2Fcategory%2Fchilly-grinding-with-cyclone&ref=http%3A%2F%2Flocalhost%3A3000%2Fcategory%2Fchilly-grinding-with-cyclone&rcb=4&frm=0&tiba=Jay%20Ambe%20Food%20Machinery%20%7C%20Premium%20Commercial%20Grinding%20Solutions&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1603470718.1787307121&uaa=arm&uab=64&uafvl=Chromium%3B152.0.7977.65%7CNot%253FA_Brand%3B24.0.0.0%7CGoogle%2520Chrome%3B152.0.7977.65&uamb=0&uam=&uap=macOS&uapv=26.6.2&uaw=0&data=event%3Dgtag.config&ept=68&gcp=5
+- status: 0
+- durationMs: 140
+
+## 2026-09-02 14:27:15.502Z console.error
+- text: Fetch error from : 
+
+## 2026-09-02 14:27:15.539Z network.error
+- method: POST
+- url: https://ad.doubleclick.net/ccm/s/collect?auid=1603470718.1787307121&gtm=45be68v1v9213744267za200zd9213744267xec&fmt=8
+- status: 0
+- durationMs: 176
+
+## 2026-09-02 14:27:15.539Z console.error
+- text: Fetch error from : 
+
+## 2026-09-02 17:31:27.946Z load
+- url: http://localhost:3000/category/chilly-grinding-with-cyclone
+- title: Jay Ambe Food Machinery | Premium Commercial Grinding Solutions
+
+## 2026-09-02 17:31:28.264Z network.error
+- method: POST
+- url: https://www.google.com/ccm/collect?rcb=3&frm=0&apvc=1&auid=1603470718.1787307121&dt=Jay%20Ambe%20Food%20Machinery%20%7C%20Premium%20Commercial%20Grinding%20Solutions&tid=AW-11334117890&en=page_view&dl=http%3A%2F%2Flocalhost%3A3000%2Fcategory%2Fchilly-grinding-with-cyclone&dr=http%3A%2F%2Flocalhost%3A3000%2Fcategory%2Fchilly-grinding-with-cyclone&scrsrc=www.googletagmanager.com&rnd=1940253097.1788370288&navt=r&npa=0&gtm=45be6910h1v9213744267za200zd9213744267xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938465~115938468~118897920~118897930~120385422~120474864&tft=1788370288139&tfd=858&tids=AW-11334117890&fmt=8
+- status: 0
+- durationMs: 125
+
+## 2026-09-02 17:31:28.264Z console.error
+- text: Fetch error from : 
+
+## 2026-09-02 17:31:28.269Z network.error
+- method: POST
+- url: https://www.google.com/rmkt/collect/11334117890/?random=1788370288129&cv=11&fst=1788370288129&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6910h1v9213744267za200zd9213744267xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938465~115938468~118897920~118897930~120385422~120474864&u_w=1728&u_h=1117&url=http%3A%2F%2Flocalhost%3A3000%2Fcategory%2Fchilly-grinding-with-cyclone&ref=http%3A%2F%2Flocalhost%3A3000%2Fcategory%2Fchilly-grinding-with-cyclone&rcb=3&frm=0&tiba=Jay%20Ambe%20Food%20Machinery%20%7C%20Premium%20Commercial%20Grinding%20Solutions&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1603470718.1787307121&uaa=arm&uab=64&uafvl=Chromium%3B152.0.7977.65%7CNot%253FA_Brand%3B24.0.0.0%7CGoogle%2520Chrome%3B152.0.7977.65&uamb=0&uam=&uap=macOS&uapv=26.6.2&uaw=0&data=event%3Dgtag.config&ept=68&gcp=5
+- status: 0
+- durationMs: 130
+
+## 2026-09-02 17:31:28.269Z console.error
+- text: Fetch error from : 
+
+## 2026-09-02 17:31:28.279Z network.error
+- method: POST
+- url: https://ad.doubleclick.net/ccm/s/collect?auid=1603470718.1787307121&gtm=45be6910h1v9213744267za200zd9213744267xec&fmt=8
+- status: 0
+- durationMs: 140
+
+## 2026-09-02 17:31:28.279Z console.error
+- text: Fetch error from : 
+
+## 2026-09-03 01:43:18.696Z load
+- url: http://localhost:3000/category/chilly-grinding-with-cyclone
+- title: Jay Ambe Food Machinery | Premium Commercial Grinding Solutions
+
+## 2026-09-03 01:43:19.087Z network.error
+- method: POST
+- url: https://www.google.com/ccm/collect?rcb=6&frm=0&apvc=1&auid=1603470718.1787307121&dt=Jay%20Ambe%20Food%20Machinery%20%7C%20Premium%20Commercial%20Grinding%20Solutions&tid=AW-11334117890&en=page_view&dl=http%3A%2F%2Flocalhost%3A3000%2Fcategory%2Fchilly-grinding-with-cyclone&dr=http%3A%2F%2Flocalhost%3A3000%2Fcategory%2Fchilly-grinding-with-cyclone&scrsrc=www.googletagmanager.com&rnd=959628776.1788399799&navt=r&npa=0&gtm=45be6911v9213744267za200zd9213744267xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938465~115938468~118897920~118897930~120385423~120420415~120469145~120469153&tft=1788399798869&tfd=744&tids=AW-11334117890&fmt=8
+- status: 0
+- durationMs: 217
+
+## 2026-09-03 01:43:19.087Z console.error
+- text: Fetch error from : 
+
+## 2026-09-03 01:43:19.087Z network.error
+- method: POST
+- url: https://www.google.com/rmkt/collect/11334117890/?random=1788399798857&cv=11&fst=1788399798857&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6911v9213744267za200zd9213744267xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938465~115938468~118897920~118897930~120385423~120420415~120469145~120469153&u_w=1728&u_h=1117&url=http%3A%2F%2Flocalhost%3A3000%2Fcategory%2Fchilly-grinding-with-cyclone&ref=http%3A%2F%2Flocalhost%3A3000%2Fcategory%2Fchilly-grinding-with-cyclone&rcb=6&frm=0&tiba=Jay%20Ambe%20Food%20Machinery%20%7C%20Premium%20Commercial%20Grinding%20Solutions&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1603470718.1787307121&uaa=arm&uab=64&uafvl=Chromium%3B152.0.7977.65%7CNot%253FA_Brand%3B24.0.0.0%7CGoogle%2520Chrome%3B152.0.7977.65&uamb=0&uam=&uap=macOS&uapv=26.6.2&uaw=0&data=event%3Dgtag.config&ept=68&gcp=5
+- status: 0
+- durationMs: 219
+
+## 2026-09-03 01:43:19.087Z console.error
+- text: Fetch error from : 
+
+## 2026-09-03 01:43:19.209Z network.error
+- method: POST
+- url: https://ad.doubleclick.net/ccm/s/collect?auid=1603470718.1787307121&gtm=45be6911v9213744267za200zd9213744267xec&fmt=8
+- status: 0
+- durationMs: 339
+
+## 2026-09-03 01:43:19.209Z console.error
+- text: Fetch error from : 
+
+## 2026-09-13 06:54:08.245Z load
+- url: http://localhost:3000/
+- title: Jay Ambe Food Machinery | Premium Commercial Grinding Solutions
+

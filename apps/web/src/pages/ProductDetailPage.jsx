@@ -32,6 +32,7 @@ const NotFound = () => (
 const ProductDetailPage = () => {
   const { slug } = useParams();
   const product = products.find((p) => p.slug === slug);
+  
   const { addToCart } = useCart();
   
   if (!product) return <NotFound />;
