@@ -6,6 +6,21 @@ import { useCart } from '../context/CartContext';
 import { supabase } from '@/lib/supabase';
 import Logo from '@/components/Logo';
 
+// Add Cashfree Script loader
+const loadCashfreeScript = () => {
+  return new Promise((resolve) => {
+    if (window.Cashfree) {
+      resolve(true);
+      return;
+    }
+    const script = document.createElement('script');
+    script.src = 'https://sdk.cashfree.com/js/v3/cashfree.js';
+    script.onload = () => resolve(true);
+    script.onerror = () => resolve(false);
+    document.body.appendChild(script);
+  });
+};
+
 // Add Razorpay Script loader
 const loadRazorpayScript = () => {
   return new Promise((resolve) => {
@@ -31,6 +46,8 @@ const CheckoutPage = () => {
     state: 'Gujarat',
     pinCode: ''
   });
+  
+  const [paymentMethod, setPaymentMethod] = useState('razorpay');
 
   // Redirect to home if cart is empty
   useEffect(() => {
@@ -49,65 +66,142 @@ const CheckoutPage = () => {
     }
 
     setIsProcessing(true);
-    const res = await loadRazorpayScript();
 
-    if (!res) {
-      alert('Razorpay SDK failed to load. Are you online?');
-      setIsProcessing(false);
-      return;
-    }
+    if (paymentMethod === 'cashfree') {
+      const res = await loadCashfreeScript();
 
-    // Full Payment
-    const amountInPaisa = cartTotal * 100;
-
-    const options = {
-      // Use live key
-      key: "rzp_live_TUmhhbbddSN5xH",
-      amount: amountInPaisa,
-      currency: "INR",
-      name: "Jay Ambe Food Machinery",
-      description: "Checkout Payment",
-      image: "https://jayambefoodmachinery.com/media/company-logo.jpeg",
-      handler: async function (response) {
-        // Payment successful
-        try {
-          // Save order to Supabase
-          const orderDetails = `Items: ${cartItems.map(i => `${i.quantity}x ${i.name}`).join(', ')} | Total: ₹${cartTotal}`;
-          
-          await supabase.from('inquiries').insert([
-            {
-              name: `${form.firstName} ${form.lastName}`,
-              phone: form.emailOrPhone,
-              product: orderDetails,
-              zipcode: form.pinCode,
-              city: form.city,
-              state: form.state,
-              source: `checkout (Payment ID: ${response.razorpay_payment_id})`
-            }
-          ]);
-          
-          clearCart();
-          navigate('/order-success', { state: { paymentId: response.razorpay_payment_id } });
-        } catch (error) {
-          console.error("Error saving order:", error);
-          alert("Payment was successful but we couldn't save your order automatically. Please contact support with Payment ID: " + response.razorpay_payment_id);
-        }
-      },
-      notes: {
-        address: `${form.address}, ${form.city}, ${form.state} - ${form.pinCode}`,
-      },
-      theme: {
-        color: "#c82021",
-      },
-      modal: {
-        ondismiss: function() {
-          setIsProcessing(false);
-        }
+      if (!res) {
+        alert('Cashfree SDK failed to load. Are you online?');
+        setIsProcessing(false);
+        return;
       }
-    };
 
-    const paymentObject = new window.Razorpay(options);
-    paymentObject.open();
+      try {
+        // 1. Initialize Cashfree
+        const cashfree = await window.Cashfree({
+          mode: "production", // Change to "sandbox" for testing
+        });
+
+        // 2. Call our Supabase Edge Function to create an order
+        const { data, error } = await supabase.functions.invoke('create-cashfree-order', {
+          body: {
+            amount: cartTotal,
+            customer_phone: form.emailOrPhone,
+            customer_name: `${form.firstName} ${form.lastName}`,
+            customer_email: form.emailOrPhone.includes('@') ? form.emailOrPhone : 'customer@jayambefoodmachinery.com'
+          }
+        });
+
+        if (error || !data || !data.payment_session_id) {
+          console.error("Error creating order:", error || data);
+          alert("Could not initialize payment. Please try again.");
+          setIsProcessing(false);
+          return;
+        }
+
+        // 3. Open Cashfree Checkout Modal
+        const checkoutOptions = {
+          paymentSessionId: data.payment_session_id,
+          redirectTarget: "_modal",
+        };
+
+        cashfree.checkout(checkoutOptions).then(async (result) => {
+          if (result.error) {
+            console.error(result.error);
+            alert("Payment failed or was cancelled: " + result.error.message);
+            setIsProcessing(false);
+          }
+          
+          if (result.paymentDetails) {
+            // Payment successful
+            try {
+              const orderDetails = `Items: ${cartItems.map(i => `${i.quantity}x ${i.name}`).join(', ')} | Total: ₹${cartTotal}`;
+              
+              await supabase.from('inquiries').insert([
+                {
+                  name: `${form.firstName} ${form.lastName}`,
+                  phone: form.emailOrPhone,
+                  product: orderDetails,
+                  zipcode: form.pinCode,
+                  city: form.city,
+                  state: form.state,
+                  source: `checkout (Cashfree Order ID: ${data.order_id})`
+                }
+              ]);
+              
+              clearCart();
+              navigate('/order-success', { state: { paymentId: data.order_id } });
+            } catch (dbError) {
+              console.error("Error saving order:", dbError);
+              alert("Payment was successful but we couldn't save your order automatically. Please contact support with Order ID: " + data.order_id);
+            }
+          }
+        });
+        
+      } catch (err) {
+        console.error(err);
+        alert("Something went wrong initializing the payment.");
+        setIsProcessing(false);
+      }
+    } else {
+      // Razorpay Flow
+      const res = await loadRazorpayScript();
+
+      if (!res) {
+        alert('Razorpay SDK failed to load. Are you online?');
+        setIsProcessing(false);
+        return;
+      }
+
+      // Full Payment
+      const amountInPaisa = cartTotal * 100;
+
+      const options = {
+        key: "rzp_live_TUmhhbbddSN5xH",
+        amount: amountInPaisa,
+        currency: "INR",
+        name: "Jay Ambe Food Machinery",
+        description: "Checkout Payment",
+        image: "https://jayambefoodmachinery.com/media/company-logo.jpeg",
+        handler: async function (response) {
+          try {
+            const orderDetails = `Items: ${cartItems.map(i => `${i.quantity}x ${i.name}`).join(', ')} | Total: ₹${cartTotal}`;
+            
+            await supabase.from('inquiries').insert([
+              {
+                name: `${form.firstName} ${form.lastName}`,
+                phone: form.emailOrPhone,
+                product: orderDetails,
+                zipcode: form.pinCode,
+                city: form.city,
+                state: form.state,
+                source: `checkout (Payment ID: ${response.razorpay_payment_id})`
+              }
+            ]);
+            
+            clearCart();
+            navigate('/order-success', { state: { paymentId: response.razorpay_payment_id } });
+          } catch (error) {
+            console.error("Error saving order:", error);
+            alert("Payment was successful but we couldn't save your order automatically. Please contact support with Payment ID: " + response.razorpay_payment_id);
+          }
+        },
+        notes: {
+          address: `${form.address}, ${form.city}, ${form.state} - ${form.pinCode}`,
+        },
+        theme: {
+          color: "#c82021",
+        },
+        modal: {
+          ondismiss: function() {
+            setIsProcessing(false);
+          }
+        }
+      };
+
+      const paymentObject = new window.Razorpay(options);
+      paymentObject.open();
+    }
   };
 
   if (cartItems.length === 0 && !isProcessing) return null;
@@ -203,14 +297,41 @@ const CheckoutPage = () => {
             </div>
 
             <div className="pt-6">
-              <h2 className="mb-4 text-lg font-bold text-slate-800">Payment</h2>
-              <div className="rounded-md border border-slate-300 bg-slate-50 p-4">
-                <div className="flex items-center gap-2 font-semibold text-slate-700">
-                  <CreditCard className="h-5 w-5 text-slate-500" /> Razorpay Secure
-                </div>
-                <p className="mt-2 text-sm text-slate-500">
-                  After clicking "Pay now", you will be redirected to Razorpay Secure to complete your purchase safely via UPI, Credit/Debit Card, or Netbanking.
-                </p>
+              <h2 className="mb-4 text-lg font-bold text-slate-800">Payment Method</h2>
+              <div className="space-y-3">
+                <label className={`flex cursor-pointer items-center gap-3 rounded-md border p-4 transition-colors ${paymentMethod === 'razorpay' ? 'border-brand-blue bg-blue-50/50' : 'border-slate-300 bg-white hover:bg-slate-50'}`}>
+                  <input
+                    type="radio"
+                    name="paymentMethod"
+                    value="razorpay"
+                    checked={paymentMethod === 'razorpay'}
+                    onChange={() => setPaymentMethod('razorpay')}
+                    className="h-4 w-4 text-brand-blue"
+                  />
+                  <div className="flex-1">
+                    <div className="flex items-center gap-2 font-semibold text-slate-700">
+                      <CreditCard className="h-5 w-5 text-slate-500" /> Razorpay Secure
+                    </div>
+                    <p className="mt-1 text-xs text-slate-500">Pay securely via UPI, Credit/Debit Card, or Netbanking using Razorpay.</p>
+                  </div>
+                </label>
+                
+                <label className={`flex cursor-pointer items-center gap-3 rounded-md border p-4 transition-colors ${paymentMethod === 'cashfree' ? 'border-brand-blue bg-blue-50/50' : 'border-slate-300 bg-white hover:bg-slate-50'}`}>
+                  <input
+                    type="radio"
+                    name="paymentMethod"
+                    value="cashfree"
+                    checked={paymentMethod === 'cashfree'}
+                    onChange={() => setPaymentMethod('cashfree')}
+                    className="h-4 w-4 text-brand-blue"
+                  />
+                  <div className="flex-1">
+                    <div className="flex items-center gap-2 font-semibold text-slate-700">
+                      <CreditCard className="h-5 w-5 text-slate-500" /> Cashfree Secure
+                    </div>
+                    <p className="mt-1 text-xs text-slate-500">Alternative secure payment via UPI, Credit/Debit Card, or Netbanking.</p>
+                  </div>
+                </label>
               </div>
             </div>
 
@@ -278,7 +399,7 @@ const CheckoutPage = () => {
             </span>
           </div>
           <p className="mt-2 text-right text-xs text-slate-500">
-            This covers the full cost of your machines. Secure payment via Razorpay.
+            This covers the full cost of your machines. Secure payments powered by Razorpay and Cashfree.
           </p>
         </div>
       </div>
