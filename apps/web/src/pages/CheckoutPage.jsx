@@ -86,7 +86,7 @@ const CheckoutPage = () => {
         const { data, error } = await supabase.functions.invoke('create-cashfree-order', {
           body: {
             amount: cartTotal,
-            customer_phone: form.emailOrPhone,
+            customer_phone: form.emailOrPhone.includes('@') ? '9999999999' : form.emailOrPhone,
             customer_name: `${form.firstName} ${form.lastName}`,
             customer_email: form.emailOrPhone.includes('@') ? form.emailOrPhone : 'customer@jayambefoodmachinery.com'
           }
