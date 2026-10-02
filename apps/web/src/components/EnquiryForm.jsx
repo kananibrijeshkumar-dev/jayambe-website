@@ -2,6 +2,7 @@ import WhatsAppIcon from '@/components/WhatsAppIcon';
 import React, { useState, useEffect } from 'react';
 import { MessageCircle, Mail, CheckCircle2 } from 'lucide-react';
 import { company, categories, products, waLink } from '@/data/site';
+import { supabase } from '@/lib/supabase';
 
 const inputClass =
   'w-full rounded-sm border border-brand-beige bg-white px-3 py-2.5 text-sm text-slate-800 outline-none transition-colors placeholder:text-slate-400 focus:border-brand-blue focus:ring-2 focus:ring-brand-blue/20 disabled:bg-slate-50 disabled:text-slate-500';
@@ -81,6 +82,7 @@ const EnquiryForm = ({ defaultProduct = '', compact = false }) => {
     // Bypass RLS by letting the Vercel backend do the insert
 
     // Save to Google Sheets / CRM
+    let syncSuccess = false;
     try {
       const formData = new URLSearchParams();
       formData.append("name", form.name);
@@ -116,8 +118,11 @@ const EnquiryForm = ({ defaultProduct = '', compact = false }) => {
         console.error('Error pushing to CRM:', crmErr);
       }
       // -------------------------------------------------
+
+      syncSuccess = true;
     } catch (err) {
       console.error('Error saving to Google Sheets:', err);
+      syncSuccess = false;
     }
 
 
