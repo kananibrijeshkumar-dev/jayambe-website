@@ -5524,3 +5524,38 @@
 - url: http://localhost:3000/
 - title: Jay Ambe Food Machinery | Premium Commercial Grinding Solutions
 
+## 2026-09-14 06:43:47.780Z load
+- url: http://localhost:3000/
+- title: Jay Ambe Food Machinery | Premium Commercial Grinding Solutions
+
+## 2026-09-14 06:43:47.822Z navigate
+- url: http://localhost:3000/
+- via: replaceState
+
+## 2026-09-14 06:43:48.055Z network.error
+- method: POST
+- url: https://www.google.com/rmkt/collect/11334117890/?random=1789368227916&cv=11&fst=1789368227916&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6992v9213744267za200zd9213744267xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938469~118897920~118897930~120213116~120385422~120469145~120469153&u_w=1728&u_h=1117&url=http%3A%2F%2Flocalhost%3A3000%2F&rcb=4&frm=0&tiba=Atta%20%26%20Masala%20Pulverizer%20Machine%20Manufacturer%20Ahmedabad%20%7C%20Jay%20Ambe%20Food%20Machinery&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1603470718.1787307121&uaa=arm&uab=64&uafvl=Chromium%3B152.0.7977.65%7CNot%253FA_Brand%3B24.0.0.0%7CGoogle%2520Chrome%3B152.0.7977.65&uamb=0&uam=&uap=macOS&uapv=26.6.2&uaw=0&data=event%3Dgtag.config&ept=68&gcp=5
+- status: 0
+- durationMs: 131
+
+## 2026-09-14 06:43:48.055Z console.error
+- text: Fetch error from : 
+
+## 2026-09-14 06:43:48.058Z network.error
+- method: POST
+- url: https://www.google.com/ccm/collect?rcb=4&frm=0&apvc=1&auid=1603470718.1787307121&dt=Atta%20%26%20Masala%20Pulverizer%20Machine%20Manufacturer%20Ahmedabad%20%7C%20Jay%20Ambe%20Food%20Machinery&tid=AW-11334117890&en=page_view&dl=http%3A%2F%2Flocalhost%3A3000%2F&scrsrc=www.googletagmanager.com&rnd=805996312.1789368228&navt=n&npa=0&gtm=45be6992v9213744267za200zd9213744267xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938469~118897920~118897930~120213116~120385422~120469145~120469153&tft=1789368227924&tfd=433&tids=AW-11334117890&fmt=8
+- status: 0
+- durationMs: 133
+
+## 2026-09-14 06:43:48.058Z console.error
+- text: Fetch error from : 
+
+## 2026-09-14 06:43:48.089Z network.error
+- method: POST
+- url: https://ad.doubleclick.net/ccm/s/collect?auid=1603470718.1787307121&gtm=45be6992v9213744267za200zd9213744267xec&fmt=8
+- status: 0
+- durationMs: 165
+
+## 2026-09-14 06:43:48.089Z console.error
+- text: Fetch error from : 
+

@@ -79,7 +79,7 @@ const CheckoutPage = () => {
       try {
         // 1. Initialize Cashfree
         const cashfree = await window.Cashfree({
-          mode: "production", // Change to "sandbox" for testing
+          mode: "production", 
         });
 
         // 2. Call our Supabase Edge Function to create an order

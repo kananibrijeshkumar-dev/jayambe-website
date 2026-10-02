@@ -79,29 +79,7 @@ const EnquiryForm = ({ defaultProduct = '', compact = false }) => {
 
     setIsSubmitting(true);
 
-    let insertedId = null;
-
-    // Save to Supabase first
-    try {
-      const { data, error } = await supabase.from('inquiries').insert([
-        {
-          name: form.name,
-          phone: form.phone,
-          product: form.product || null,
-          zipcode: form.zipcode || null,
-          city: form.city || null,
-          state: form.state || null,
-          source: 'pending'
-        }
-      ]).select();
-
-      if (error) throw error;
-      if (data && data[0]) {
-        insertedId = data[0].id;
-      }
-    } catch (err) {
-      console.error('Error saving to Supabase:', err);
-    }
+    // Bypass RLS by letting the Vercel backend do the insert
 
     // Save to Google Sheets / CRM
     let syncSuccess = false;
@@ -147,17 +125,7 @@ const EnquiryForm = ({ defaultProduct = '', compact = false }) => {
       syncSuccess = false;
     }
 
-    // Update Supabase with final sync status
-    if (insertedId) {
-      try {
-        await supabase
-          .from('inquiries')
-          .update({ source: syncSuccess ? 'success' : 'failed' })
-          .eq('id', insertedId);
-      } catch (err) {
-        console.error('Error updating sync status:', err);
-      }
-    }
+
 
     if (channel === 'whatsapp') {
       window.open(waLink(summary()), '_blank', 'noopener');

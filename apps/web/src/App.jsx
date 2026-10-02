@@ -16,6 +16,7 @@ import EnquiryPage from './pages/EnquiryPage';
 import AdminPage from './pages/AdminPage';
 import CheckoutPage from './pages/CheckoutPage';
 import OrderSuccessPage from './pages/OrderSuccessPage';
+import { LegalPolicyPages } from './pages/LegalPolicyPages';
 
 function App() {
     return (
@@ -36,6 +37,11 @@ function App() {
                     <Route path="/checkout" element={<CheckoutPage />} />
                     <Route path="/order-success" element={<OrderSuccessPage />} />
                     <Route path="/admin" element={<AdminPage />} />
+                    <Route path="/terms" element={<LegalPolicyPages type="terms" />} />
+                    <Route path="/privacy" element={<LegalPolicyPages type="privacy" />} />
+                    <Route path="/refund" element={<LegalPolicyPages type="refund" />} />
+                    <Route path="/return" element={<LegalPolicyPages type="return" />} />
+                    <Route path="/shipping" element={<LegalPolicyPages type="shipping" />} />
                     <Route path="*" element={<HomePage />} />
                 </Routes>
             </Router>
