@@ -124,7 +124,7 @@ const EnquiryForm = ({ defaultProduct = '', compact = false }) => {
 
       // --- PUSH TO ODOO CRM VIA WHATSAPP BOT BACKEND ---
       try {
-        await fetch('https://whatsapp-sales-aegent-jayambe.vercel.app/api/website-lead', {
+        await fetch('https://whatsapp-sales-agent-blond.vercel.app/api/website-lead', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
