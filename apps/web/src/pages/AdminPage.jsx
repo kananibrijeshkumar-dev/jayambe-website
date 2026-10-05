@@ -44,7 +44,7 @@ const AdminPage = () => {
     let query = supabase
       .from('inquiries')
       .select('*')
-      .eq('archived', false)
+      
       .order('created_at', { ascending: false });
       
     if (startDate) {
@@ -59,7 +59,7 @@ const AdminPage = () => {
     if (error) {
       console.error('Error fetching inquiries:', error);
     } else {
-      setInquiries(data || []);
+      setInquiries((data || []).filter(i => !i.archived));
     }
     setFetchingData(false);
   };
