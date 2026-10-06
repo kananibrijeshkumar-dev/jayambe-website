@@ -45,13 +45,13 @@ const AdminPage = () => {
       .from('inquiries')
       .select('*')
       
-      .order('created_at', { ascending: false });
+      .order('created_date', { ascending: false });
       
     if (startDate) {
-      query = query.gte('created_at', `${startDate}T00:00:00.000Z`);
+      query = query.gte('created_date', `${startDate}T00:00:00.000Z`);
     }
     if (endDate) {
-      query = query.lte('created_at', `${endDate}T23:59:59.999Z`);
+      query = query.lte('created_date', `${endDate}T23:59:59.999Z`);
     }
 
     const { data, error } = await query;
@@ -291,7 +291,7 @@ const AdminPage = () => {
                         />
                       </td>
                       <td className="whitespace-nowrap px-6 py-4 text-sm text-slate-600">
-                        {new Date(inquiry.created_at).toLocaleDateString()}
+                        {new Date(inquiry.created_date).toLocaleDateString()}
                       </td>
                       <td className="px-6 py-4">
                         <div className="font-medium text-brand-blue">{inquiry.name}</div>
